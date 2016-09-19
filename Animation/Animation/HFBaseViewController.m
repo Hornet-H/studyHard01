@@ -14,11 +14,30 @@
 
 @implementation HFBaseViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self setupUI];
+- (instancetype)initWithTitle:(NSString *)title{
+    if (self = [super init]) {
+        self.title = title;
+    }
+    return self;
 }
 
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if (kIOSVersion >= 7.0) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self configuration];
+    [self setupUI];
+
+}
+- (void)configuration{
+
+
+}
 
 - (void)setupUI{
 

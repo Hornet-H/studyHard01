@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		0763043595F19D0E4EDB6455 /* libPods-AnimationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB9A4F3DB8ED772921CA5C7 /* libPods-AnimationTests.a */; };
 		3D0FBE1B3B258E6DF115B8B1 /* libPods-Animation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CBF48B72DB16F860944FC6 /* libPods-Animation.a */; };
+		878258D71D8E715100A6A70B /* HFPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258D61D8E715100A6A70B /* HFPositionViewController.m */; };
+		878258DA1D8E719E00A6A70B /* HFOpacityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258D91D8E719E00A6A70B /* HFOpacityViewController.m */; };
+		878258DD1D8E71B200A6A70B /* HFScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258DC1D8E71B200A6A70B /* HFScaleViewController.m */; };
+		878258E01D8E71BF00A6A70B /* HFColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258DF1D8E71BF00A6A70B /* HFColorViewController.m */; };
+		878258E31D8E71CD00A6A70B /* HFRatationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258E21D8E71CD00A6A70B /* HFRatationViewController.m */; };
+		878258E61D8E71D600A6A70B /* HFRepeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258E51D8E71D600A6A70B /* HFRepeatViewController.m */; };
+		878258E91D8E71E600A6A70B /* HFEasingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258E81D8E71E600A6A70B /* HFEasingViewController.m */; };
+		878258EC1D8E71F700A6A70B /* HFSpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258EB1D8E71F700A6A70B /* HFSpringViewController.m */; };
+		878258EF1D8E720800A6A70B /* HFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258EE1D8E720800A6A70B /* HFLoginViewController.m */; };
+		878258F21D8E721500A6A70B /* HFKeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258F11D8E721500A6A70B /* HFKeyFrameViewController.m */; };
+		878258F51D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258F41D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m */; };
 		87FBB5CA1D88FE0E0043418B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5C91D88FE0E0043418B /* main.m */; };
 		87FBB5CD1D88FE0E0043418B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5CC1D88FE0E0043418B /* AppDelegate.m */; };
 		87FBB5D01D88FE0E0043418B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5CF1D88FE0E0043418B /* ViewController.m */; };
@@ -42,6 +53,28 @@
 		1BB9A4F3DB8ED772921CA5C7 /* libPods-AnimationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4446EC56B9A51CBA432D450D /* Pods-AnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTests/Pods-AnimationTests.release.xcconfig"; sourceTree = "<group>"; };
 		68AC54577FC1182F6D8556FA /* Pods-AnimationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationUITests/Pods-AnimationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		878258D51D8E715100A6A70B /* HFPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFPositionViewController.h; sourceTree = "<group>"; };
+		878258D61D8E715100A6A70B /* HFPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFPositionViewController.m; sourceTree = "<group>"; };
+		878258D81D8E719E00A6A70B /* HFOpacityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFOpacityViewController.h; sourceTree = "<group>"; };
+		878258D91D8E719E00A6A70B /* HFOpacityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFOpacityViewController.m; sourceTree = "<group>"; };
+		878258DB1D8E71B200A6A70B /* HFScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFScaleViewController.h; sourceTree = "<group>"; };
+		878258DC1D8E71B200A6A70B /* HFScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScaleViewController.m; sourceTree = "<group>"; };
+		878258DE1D8E71BF00A6A70B /* HFColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFColorViewController.h; sourceTree = "<group>"; };
+		878258DF1D8E71BF00A6A70B /* HFColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFColorViewController.m; sourceTree = "<group>"; };
+		878258E11D8E71CD00A6A70B /* HFRatationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRatationViewController.h; sourceTree = "<group>"; };
+		878258E21D8E71CD00A6A70B /* HFRatationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRatationViewController.m; sourceTree = "<group>"; };
+		878258E41D8E71D600A6A70B /* HFRepeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRepeatViewController.h; sourceTree = "<group>"; };
+		878258E51D8E71D600A6A70B /* HFRepeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRepeatViewController.m; sourceTree = "<group>"; };
+		878258E71D8E71E600A6A70B /* HFEasingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFEasingViewController.h; sourceTree = "<group>"; };
+		878258E81D8E71E600A6A70B /* HFEasingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFEasingViewController.m; sourceTree = "<group>"; };
+		878258EA1D8E71F700A6A70B /* HFSpringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSpringViewController.h; sourceTree = "<group>"; };
+		878258EB1D8E71F700A6A70B /* HFSpringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFSpringViewController.m; sourceTree = "<group>"; };
+		878258ED1D8E720800A6A70B /* HFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLoginViewController.h; sourceTree = "<group>"; };
+		878258EE1D8E720800A6A70B /* HFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLoginViewController.m; sourceTree = "<group>"; };
+		878258F01D8E721500A6A70B /* HFKeyFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFKeyFrameViewController.h; sourceTree = "<group>"; };
+		878258F11D8E721500A6A70B /* HFKeyFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFKeyFrameViewController.m; sourceTree = "<group>"; };
+		878258F31D8E722F00A6A70B /* HFLoginAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLoginAutoLayoutViewController.h; sourceTree = "<group>"; };
+		878258F41D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLoginAutoLayoutViewController.m; sourceTree = "<group>"; };
 		87FBB5C51D88FE0E0043418B /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FBB5C91D88FE0E0043418B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87FBB5CB1D88FE0E0043418B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,6 +221,28 @@
 			children = (
 				87FBB5CE1D88FE0E0043418B /* ViewController.h */,
 				87FBB5CF1D88FE0E0043418B /* ViewController.m */,
+				878258D51D8E715100A6A70B /* HFPositionViewController.h */,
+				878258D61D8E715100A6A70B /* HFPositionViewController.m */,
+				878258D81D8E719E00A6A70B /* HFOpacityViewController.h */,
+				878258D91D8E719E00A6A70B /* HFOpacityViewController.m */,
+				878258DB1D8E71B200A6A70B /* HFScaleViewController.h */,
+				878258DC1D8E71B200A6A70B /* HFScaleViewController.m */,
+				878258DE1D8E71BF00A6A70B /* HFColorViewController.h */,
+				878258DF1D8E71BF00A6A70B /* HFColorViewController.m */,
+				878258E11D8E71CD00A6A70B /* HFRatationViewController.h */,
+				878258E21D8E71CD00A6A70B /* HFRatationViewController.m */,
+				878258E41D8E71D600A6A70B /* HFRepeatViewController.h */,
+				878258E51D8E71D600A6A70B /* HFRepeatViewController.m */,
+				878258E71D8E71E600A6A70B /* HFEasingViewController.h */,
+				878258E81D8E71E600A6A70B /* HFEasingViewController.m */,
+				878258EA1D8E71F700A6A70B /* HFSpringViewController.h */,
+				878258EB1D8E71F700A6A70B /* HFSpringViewController.m */,
+				878258ED1D8E720800A6A70B /* HFLoginViewController.h */,
+				878258EE1D8E720800A6A70B /* HFLoginViewController.m */,
+				878258F01D8E721500A6A70B /* HFKeyFrameViewController.h */,
+				878258F11D8E721500A6A70B /* HFKeyFrameViewController.m */,
+				878258F31D8E722F00A6A70B /* HFLoginAutoLayoutViewController.h */,
+				878258F41D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -497,10 +552,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878258F51D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m in Sources */,
+				878258DA1D8E719E00A6A70B /* HFOpacityViewController.m in Sources */,
 				87FBB5D01D88FE0E0043418B /* ViewController.m in Sources */,
+				878258F21D8E721500A6A70B /* HFKeyFrameViewController.m in Sources */,
+				878258EF1D8E720800A6A70B /* HFLoginViewController.m in Sources */,
 				87FBB6031D8900B60043418B /* HFBaseViewController.m in Sources */,
+				878258E31D8E71CD00A6A70B /* HFRatationViewController.m in Sources */,
 				87FBB5CD1D88FE0E0043418B /* AppDelegate.m in Sources */,
+				878258D71D8E715100A6A70B /* HFPositionViewController.m in Sources */,
+				878258DD1D8E71B200A6A70B /* HFScaleViewController.m in Sources */,
+				878258E01D8E71BF00A6A70B /* HFColorViewController.m in Sources */,
+				878258E91D8E71E600A6A70B /* HFEasingViewController.m in Sources */,
 				87FBB5CA1D88FE0E0043418B /* main.m in Sources */,
+				878258E61D8E71D600A6A70B /* HFRepeatViewController.m in Sources */,
+				878258EC1D8E71F700A6A70B /* HFSpringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +711,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = Animation/configuration.pch;
 				INFOPLIST_FILE = Animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dahuangfeng.Animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,6 +726,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = Animation/configuration.pch;
 				INFOPLIST_FILE = Animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dahuangfeng.Animation;
 				PRODUCT_NAME = "$(TARGET_NAME)";

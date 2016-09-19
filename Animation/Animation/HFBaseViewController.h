@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HFBaseViewController : UIViewController
+- (instancetype)initWithTitle:(NSString *)title;
 - (void)setupUI;
 @end
