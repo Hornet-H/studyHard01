@@ -33,7 +33,7 @@
     [self rotatingImageView];
 }
 - (void)rotatingImageView{
-    /** UIViewAnimationOptionCurveLinear这个属性可以让两次动画衔接的时候不间断*/
+    /** UIViewAnimationOptionCurveLinear这个属性可以让两次动画衔接的时候不间断，更换可以有不同的效果*/
 [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
     self.imageView.transform = CGAffineTransformRotate(self.imageView.transform, M_PI);
 } completion:^(BOOL finished) {
