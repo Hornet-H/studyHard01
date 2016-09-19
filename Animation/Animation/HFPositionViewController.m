@@ -32,7 +32,7 @@
     [self.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.alpha = 1;
     }];
-   
+    
     [self.redView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(200);
         make.leading.equalTo(self.view).offset(margin);
@@ -58,44 +58,106 @@
         make.height.equalTo(30);
         make.centerX.equalTo(self.view);
     }];
-    self.isNomal = YES;
+    //    self.isNomal = YES;
     [self.view setNeedsUpdateConstraints];
-
+    
     [self.view layoutIfNeeded];
-
+    
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-[self.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    obj.alpha = 0;
-}];
-
+    [self.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.alpha = 0;
+    }];
+    
 }
 - (void)actionButtonClick:(UIButton *)sender{
-    if (self.isNomal) {
+    //    if (self.isNomal) {
+    
+    [UIView animateWithDuration:1.0 animations:^{
         [self.redView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.leading.equalTo(self.view).offset( - kScreenWidth + margin);
         }];
         
+        /** 强制更新约束的代码必须卸载动画的代码里面，否则动画无效*/
+        [self.view setNeedsUpdateConstraints];
+        [self.view updateConstraints];
+        [self.view layoutIfNeeded];
+        
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1 animations:^{
+            [self.redView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.leading.equalTo(self.view).offset( margin);
+            }];
+            
+            /** 强制更新约束的代码必须卸载动画的代码里面，否则动画无效*/
+            [self.view setNeedsUpdateConstraints];
+            [self.view updateConstraints];
+            [self.view layoutIfNeeded];
+        } completion:nil];
+        
+    }];
+    
+    [UIView animateKeyframesWithDuration:1 delay:0.5 options:0 animations:^{
         [self.greenView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.view).offset(200 - kScreenHeight);
             
         }];
-        
-        
-    }else{
-    
-        [self.redView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.leading.equalTo(self.view).offset( margin);
-        }];
-    }
-    
-    [self.view setNeedsUpdateConstraints];
-    [self.view updateConstraints];
-    
-    [UIView animateWithDuration:1.0 animations:^{
-        
+        [self.view setNeedsUpdateConstraints];
         [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1 animations:^{
+            [self.greenView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.view).offset(200 );
+            }];
+            [self.view setNeedsUpdateConstraints];
+            [self.view layoutIfNeeded];
+        }];
+        
+        
     }];
+    [UIView animateKeyframesWithDuration:1 delay:1.0 options:0 animations:^{
+        [self.blueView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.view).offset(4 * margin + margin + 2*kScreenWidth/5 - kScreenWidth);
+            make.top.equalTo(self.view).offset(200 - kScreenHeight);
+
+        }];
+        [self.view setNeedsUpdateConstraints];
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1 animations:^{
+            [self.blueView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.leading.equalTo(self.view).offset(4 * margin + margin + 2*kScreenWidth/5);
+                make.top.equalTo(self.view).offset(200);
+            }];
+            [self.view setNeedsUpdateConstraints];
+            [self.view layoutIfNeeded];
+        }];
+        
+        
+    }];
+    
+    
+    
+    
+    //        [UIView animateWithDuration:1 animations:^{
+    //
+    //        [self.redView mas_updateConstraints:^(MASConstraintMaker *make) {
+    //            make.leading.equalTo(self.view).offset( margin);
+    //        }];
+    //        [self.greenView mas_updateConstraints:^(MASConstraintMaker *make) {
+    //            make.top.equalTo(self.view).offset(200);
+    //
+    //        }];
+    //        [self.view setNeedsUpdateConstraints];
+    //        [self.view updateConstraints];
+    //        [self.view layoutIfNeeded];
+    //        }];
+    
+    
+    
+    
+    
     
     self.isNomal = !self.isNomal;
     
@@ -108,7 +170,7 @@
         [_actionButton setTitleColor:randomColor forState:UIControlStateNormal];
         [_actionButton addTarget:self action:@selector(actionButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
-
+    
     return _actionButton;
 }
 
@@ -127,7 +189,7 @@
         _greenView.backgroundColor = [UIColor greenColor];
         _greenView.tag = 101;
     }
-
+    
     return _greenView;
 }
 - (UIView *)blueView{
