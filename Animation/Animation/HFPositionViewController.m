@@ -28,6 +28,7 @@
     
     
 }
+
 - (void)viewDidAppear:(BOOL)animated{
     [self.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.alpha = 1;

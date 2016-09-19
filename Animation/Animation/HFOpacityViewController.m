@@ -9,6 +9,7 @@
 #import "HFOpacityViewController.h"
 
 @interface HFOpacityViewController ()
+@property (strong, nonatomic) UIView *greenView;
 
 @end
 
@@ -19,19 +20,46 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupUI{
+    [self.view addSubview:self.greenView];
+    [self.greenView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(200);
+        make.leading.equalTo(self.view).offset(2 * margin + margin + kScreenWidth/5);
+        make.width.equalTo(kScreenWidth/5);
+        make.height.equalTo(kScreenWidth/5);
+    }];
+    [self performSelector:@selector(opacityChange) withObject:nil afterDelay:1.0];
+ 
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+//    [self.view addSubview:self.greenView];
+//    [self.greenView mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.view).offset(200);
+//        make.leading.equalTo(self.view).offset(2 * margin + margin + kScreenWidth/5);
+//        make.width.equalTo(kScreenWidth/5);
+//        make.height.equalTo(kScreenWidth/5);
+//    }];
+//    [self performSelector:@selector(opacityChange) withObject:nil afterDelay:1.0];
+}
+- (void)opacityChange{
+    
+    [UIView animateWithDuration:1 animations:^{
+        self.greenView.alpha = 0.2;
+    }];
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (UIView *)greenView{
+    if (!_greenView) {
+        _greenView = [[UIView alloc]init];
+        _greenView.backgroundColor = [UIColor greenColor];
+        _greenView.tag = 101;
+    }
+    
+    return _greenView;
 }
-*/
-
 @end

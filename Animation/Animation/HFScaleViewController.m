@@ -9,6 +9,7 @@
 #import "HFScaleViewController.h"
 
 @interface HFScaleViewController ()
+@property (strong, nonatomic) UIView *greenView;
 
 @end
 
@@ -18,20 +19,46 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [self.view addSubview:self.greenView];
+    [self.greenView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.width.equalTo(kScreenWidth/5);
+        make.height.equalTo(kScreenWidth/5);
+    }];
+    [self performSelector:@selector(opacityChange) withObject:nil afterDelay:1.0];
+    
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+- (void)opacityChange{
+    
+    [self.greenView mas_updateConstraints:^(MASConstraintMaker *make) {
+       
+        make.width.equalTo(kScreenWidth/5 * 2);
+        make.height.equalTo(kScreenWidth/5 * 2);
+    }];
+    [self.view setNeedsUpdateConstraints];
+    [self.view updateConstraintsIfNeeded];
+    [UIView animateWithDuration:1.0 animations:^{
+        
+        [self.view layoutIfNeeded];
+    }];
+
+
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIView *)greenView{
+    if (!_greenView) {
+        _greenView = [[UIView alloc]init];
+        _greenView.backgroundColor = [UIColor greenColor];
+        _greenView.tag = 101;
+    }
+    
+    return _greenView;
 }
-*/
 
 @end
