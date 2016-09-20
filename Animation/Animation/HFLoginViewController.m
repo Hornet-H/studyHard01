@@ -9,7 +9,7 @@
 #import "HFLoginViewController.h"
 #import "HFLoginSucessViewController.h"
 
-@interface HFLoginViewController ()
+@interface HFLoginViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *Bubble1;
 @property (weak, nonatomic) IBOutlet UIImageView *Bubble2;
 @property (weak, nonatomic) IBOutlet UIImageView *Bubble3;
@@ -33,10 +33,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.loginPosition = CGPointZero;
 }
 
 - (void)configuration{
+    
+    self.userNameTeField.delegate = self;
+    self.passWordTextField.delegate = self;
     
     self.Bubble1.transform = CGAffineTransformMakeScale(0, 0);
     self.Bubble2.transform = CGAffineTransformMakeScale(0, 0);
@@ -64,11 +67,13 @@
     
     self.userNameTeField.centerX -= kScreenWidth;
     self.passWordTextField.centerX -= kScreenWidth;
+    
     self.loginPosition = self.loginButton.center;
     self.loginButton.centerX -= kScreenWidth;
-    self.warningMessageImageView.center = self.loginPosition;
+    
     [self.view addSubview:self.warningMessageImageView];
     self.warningMessageImageView.hidden = YES;
+    self.warningMessageImageView.center = self.loginPosition;
     
 }
 
@@ -76,13 +81,9 @@
     [super viewDidLayoutSubviews];
     
 }
-//- (void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//    self.animateHub.centerX -= kScreenWidth;
-//    self.dot.centerX -= kScreenWidth;
-//}
-- (void)viewWillAppear:(BOOL)animated{
-    
+
+- (void)viewDidAppear:(BOOL)animated{
+    [self configuration];
     [UIView animateWithDuration:0.3 delay:0.3 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:0 animations:^{
         self.Bubble1.transform = CGAffineTransformMakeScale(1, 1);
         self.Bubble4.transform = CGAffineTransformMakeScale(1, 1);
@@ -115,45 +116,67 @@
 - (IBAction)loginClick:(UIButton *)sender {
     NSString *userName = self.userNameTeField.text;
     NSString *passWord = self.passWordTextField.text;
-    self.warningMessageImageView.hidden = YES;
     self.spinner.origin = CGPointMake(12, 12);
     [self.loginButton addSubview:self.spinner];
     [self.spinner startAnimating];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-          
-        } completion:nil];
-        
-        if ([userName isEqualToString:@"datouerzi"] && [passWord isEqualToString:@"123456"]) {
-            [self.spinner stopAnimating];
-            
-            HFLoginSucessViewController *sucessViewController = [[HFLoginSucessViewController alloc]initWithTitle:@"成功登陆"];
-            [self.navigationController pushViewController:sucessViewController animated:YES];
-        }else{
-            //
-            [self.spinner stopAnimating];
-            [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-                self.loginButton.center = self.loginPosition;
-                
-            } completion:^(BOOL finished) {
-                self.loginButton.centerX -= 30;
-                [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.2 initialSpringVelocity:0 options:0 animations:^{
-                    self.loginButton.centerX = self.loginPosition.x;
-                } completion:^(BOOL finished) {
-                    [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-                        self.loginButton.centerY += 90;
-                        self.warningMessageImageView.hidden = NO;
-                        
-                    } completion:nil];
-                    
-                }];
-            }];
-            
-        }
-    });
     
+    SEL selector = NSSelectorFromString(@"netDelayWithUserName:passWord:");
+    NSInvocation *invacation = [NSInvocation invocationWithMethodSignature:[[self class] instanceMethodSignatureForSelector:selector]];
+    [invacation setSelector:selector];
+    [invacation setTarget:self];
+    [invacation setArgument:&userName atIndex:2];
+    [invacation setArgument:&passWord atIndex:3];
+    [invacation invoke];
 }
+
+- (void)netDelayWithUserName:(NSString *)userName passWord:(NSString *)password{
+
+    
+    [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+        self.warningMessageImageView.hidden = YES;
+    } completion:nil];
+    
+    if ([userName isEqualToString:@"datouerzi"] && [password isEqualToString:@"123456"]) {
+        self.warningMessageImageView.hidden = YES;
+        [self.spinner removeFromSuperview];
+        HFLoginSucessViewController *sucessViewController = [[HFLoginSucessViewController alloc]initWithTitle:@"成功登陆"];
+        [self.navigationController pushViewController:sucessViewController animated:YES];
+    }else{
+        [UIView animateWithDuration:0.3 animations:^{
+            self.loginButton.center = self.loginPosition;
+        } completion:^(BOOL finished) {
+            self.loginButton.centerX -= 30;
+            
+            [UIView animateWithDuration:1.5 delay:0 usingSpringWithDamping:0.2 initialSpringVelocity:0 options:0 animations:^{
+                self.loginButton.centerX += 30;
+            } completion:^(BOOL finished) {
+                
+                [UIView animateWithDuration:0.3 animations:^{
+                    
+                    self.loginButton.centerY += 90;
+                    [self.spinner removeFromSuperview];
+                } completion:^(BOOL finished) {
+                    [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom|UIViewAnimationOptionCurveEaseOut animations:^{
+                        self.warningMessageImageView.hidden = NO;
+                    } completion:nil];
+                }];
+                
+            }];
+        }];
+        
+        
+        
+    }
+
+
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+
+    self.warningMessageImageView.hidden = YES;
+
+}
+
 - (UIImageView *)warningMessageImageView{
     if (!_warningMessageImageView) {
         _warningMessageImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Warning"]];
