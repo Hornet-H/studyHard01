@@ -115,22 +115,23 @@
 - (IBAction)loginClick:(UIButton *)sender {
     NSString *userName = self.userNameTeField.text;
     NSString *passWord = self.passWordTextField.text;
-    
+    self.warningMessageImageView.hidden = YES;
     self.spinner.origin = CGPointMake(12, 12);
     [self.loginButton addSubview:self.spinner];
     [self.spinner startAnimating];
-    
-   [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-       self.warningMessageImageView.hidden = YES;
-   } completion:nil];
-    
-    if ([userName isEqualToString:@"datouerzi"] && [passWord isEqualToString:@"123456"]) {
-//        [self.spinner stopAnimating];
-        HFLoginSucessViewController *sucessViewController = [[HFLoginSucessViewController alloc]initWithTitle:@"成功登陆"];
-        [self.navigationController pushViewController:sucessViewController animated:YES];
-    }else{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+          
+        } completion:nil];
+        
+        if ([userName isEqualToString:@"datouerzi"] && [passWord isEqualToString:@"123456"]) {
+            [self.spinner stopAnimating];
             
+            HFLoginSucessViewController *sucessViewController = [[HFLoginSucessViewController alloc]initWithTitle:@"成功登陆"];
+            [self.navigationController pushViewController:sucessViewController animated:YES];
+        }else{
+            //
             [self.spinner stopAnimating];
             [UIView transitionWithView:self.warningMessageImageView duration:0.3 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
                 self.loginButton.center = self.loginPosition;
@@ -148,8 +149,9 @@
                     
                 }];
             }];
-        });
-    }
+            
+        }
+    });
     
 }
 - (UIImageView *)warningMessageImageView{
