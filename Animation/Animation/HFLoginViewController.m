@@ -9,6 +9,13 @@
 #import "HFLoginViewController.h"
 
 @interface HFLoginViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *Bubble1;
+@property (weak, nonatomic) IBOutlet UIImageView *Bubble2;
+@property (weak, nonatomic) IBOutlet UIImageView *Bubble3;
+@property (weak, nonatomic) IBOutlet UIImageView *Bubble4;
+@property (weak, nonatomic) IBOutlet UIImageView *Bubble5;
+@property (weak, nonatomic) IBOutlet UIImageView *dot;
+@property (weak, nonatomic) IBOutlet UIImageView *animateHub;
 
 @end
 
@@ -16,22 +23,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configuration{
+    self.Bubble1.transform = CGAffineTransformMakeScale(0, 0);
+    self.Bubble2.transform = CGAffineTransformMakeScale(0, 0);
+    self.Bubble3.transform = CGAffineTransformMakeScale(0, 0);
+    self.Bubble4.transform = CGAffineTransformMakeScale(0, 0);
+    self.Bubble5.transform = CGAffineTransformMakeScale(0, 0);
+    
+
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [UIView animateWithDuration:0.3 delay:0.3 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:0 animations:^{
+        self.Bubble1.transform = CGAffineTransformMakeScale(1, 1);
+        self.Bubble4.transform = CGAffineTransformMakeScale(1, 1);
+        self.Bubble5.transform = CGAffineTransformMakeScale(1, 1);
+        
+        
+    } completion:nil];
+    [UIView animateWithDuration:0.3 delay:0.4 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:0 animations:^{
+        self.Bubble2.transform = CGAffineTransformMakeScale(1, 1);
+        self.Bubble3.transform = CGAffineTransformMakeScale(1, 1);
+    } completion:nil];
 }
-*/
-
 @end

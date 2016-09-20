@@ -17,4 +17,13 @@ target 'Animation' do
     # Pods for testing
   end
 pod 'Masonry', '~> 1.0.1'
+pod 'YYModel', '~> 1.0.4'
+pod 'YYCache', '~> 1.0.3'
+pod 'YYImage', '~> 1.0.3'
+pod 'YYWebImage', '~> 1.0.4'
+pod 'YYText', '~> 1.0.5'
+pod 'YYKeyboardManager', '~> 1.0.1'
+pod 'YYDispatchQueuePool', '~> 1.0'
+pod 'YYCategories', '~> 1.0.3'
+pod 'YYAsyncLayer', '~> 1.0'
 end

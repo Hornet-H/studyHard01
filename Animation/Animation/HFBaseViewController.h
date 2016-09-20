@@ -10,5 +10,6 @@
 
 @interface HFBaseViewController : UIViewController
 - (instancetype)initWithTitle:(NSString *)title;
+- (void)configuration;
 - (void)setupUI;
 @end

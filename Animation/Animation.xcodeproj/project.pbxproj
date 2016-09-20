@@ -20,6 +20,8 @@
 		878258EF1D8E720800A6A70B /* HFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258EE1D8E720800A6A70B /* HFLoginViewController.m */; };
 		878258F21D8E721500A6A70B /* HFKeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258F11D8E721500A6A70B /* HFKeyFrameViewController.m */; };
 		878258F51D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258F41D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m */; };
+		878258F71D8F99E000A6A70B /* HFLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878258F61D8F99E000A6A70B /* HFLogin.storyboard */; };
+		878258FA1D90CB1E00A6A70B /* UIView+HF.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258F81D90CB1E00A6A70B /* UIView+HF.m */; };
 		87FBB5CA1D88FE0E0043418B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5C91D88FE0E0043418B /* main.m */; };
 		87FBB5CD1D88FE0E0043418B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5CC1D88FE0E0043418B /* AppDelegate.m */; };
 		87FBB5D01D88FE0E0043418B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5CF1D88FE0E0043418B /* ViewController.m */; };
@@ -75,6 +77,9 @@
 		878258F11D8E721500A6A70B /* HFKeyFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFKeyFrameViewController.m; sourceTree = "<group>"; };
 		878258F31D8E722F00A6A70B /* HFLoginAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLoginAutoLayoutViewController.h; sourceTree = "<group>"; };
 		878258F41D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLoginAutoLayoutViewController.m; sourceTree = "<group>"; };
+		878258F61D8F99E000A6A70B /* HFLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HFLogin.storyboard; sourceTree = "<group>"; };
+		878258F81D90CB1E00A6A70B /* UIView+HF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HF.m"; sourceTree = "<group>"; };
+		878258F91D90CB1E00A6A70B /* UIView+HF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HF.h"; sourceTree = "<group>"; };
 		87FBB5C51D88FE0E0043418B /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FBB5C91D88FE0E0043418B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87FBB5CB1D88FE0E0043418B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -239,6 +244,7 @@
 				878258EB1D8E71F700A6A70B /* HFSpringViewController.m */,
 				878258ED1D8E720800A6A70B /* HFLoginViewController.h */,
 				878258EE1D8E720800A6A70B /* HFLoginViewController.m */,
+				878258F61D8F99E000A6A70B /* HFLogin.storyboard */,
 				878258F01D8E721500A6A70B /* HFKeyFrameViewController.h */,
 				878258F11D8E721500A6A70B /* HFKeyFrameViewController.m */,
 				878258F31D8E722F00A6A70B /* HFLoginAutoLayoutViewController.h */,
@@ -265,6 +271,8 @@
 			children = (
 				87FBB6011D8900B60043418B /* HFBaseViewController.h */,
 				87FBB6021D8900B60043418B /* HFBaseViewController.m */,
+				878258F91D90CB1E00A6A70B /* UIView+HF.h */,
+				878258F81D90CB1E00A6A70B /* UIView+HF.m */,
 				87FBB6041D89023E0043418B /* configuration.pch */,
 			);
 			name = Comman;
@@ -402,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878258F71D8F99E000A6A70B /* HFLogin.storyboard in Resources */,
 				87FBB5D81D88FE0E0043418B /* LaunchScreen.storyboard in Resources */,
 				87FBB5D51D88FE0E0043418B /* Assets.xcassets in Resources */,
 				87FBB5D31D88FE0E0043418B /* Main.storyboard in Resources */,
@@ -560,6 +569,7 @@
 				87FBB6031D8900B60043418B /* HFBaseViewController.m in Sources */,
 				878258E31D8E71CD00A6A70B /* HFRatationViewController.m in Sources */,
 				87FBB5CD1D88FE0E0043418B /* AppDelegate.m in Sources */,
+				878258FA1D90CB1E00A6A70B /* UIView+HF.m in Sources */,
 				878258D71D8E715100A6A70B /* HFPositionViewController.m in Sources */,
 				878258DD1D8E71B200A6A70B /* HFScaleViewController.m in Sources */,
 				878258E01D8E71BF00A6A70B /* HFColorViewController.m in Sources */,

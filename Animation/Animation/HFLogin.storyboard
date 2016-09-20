@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="TtV-CY-mIe">
+            <objects>
+                <viewController storyboardIdentifier="HFLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V9d-hq-Suk" customClass="HFLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aN2-Y4-hIG"/>
+                        <viewControllerLayoutGuide type="bottom" id="X9E-3G-9gX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Psh-jV-q85">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="A69-hj-shh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble1" translatesAutoresizingMaskIntoConstraints="NO" id="Puk-Ck-Yp5">
+                                <rect key="frame" x="20" y="70" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="iu4-BK-P50"/>
+                                    <constraint firstAttribute="width" constant="130" id="jfU-52-61r"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble3" translatesAutoresizingMaskIntoConstraints="NO" id="lAO-sM-0S5">
+                                <rect key="frame" x="230" y="94" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Lff-zg-oxM"/>
+                                    <constraint firstAttribute="height" constant="120" id="drf-Lj-laS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble2" translatesAutoresizingMaskIntoConstraints="NO" id="9ow-vQ-PBn">
+                                <rect key="frame" x="5" y="305" width="124" height="124"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble5" translatesAutoresizingMaskIntoConstraints="NO" id="fMN-vj-c4d">
+                                <rect key="frame" x="245" y="539" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7lw-0l-Fyy"/>
+                                    <constraint firstAttribute="height" constant="100" id="sve-7F-z0u"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble4" translatesAutoresizingMaskIntoConstraints="NO" id="elr-8D-grE">
+                                <rect key="frame" x="200" y="263" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Uuc-f9-p3Y"/>
+                                    <constraint firstAttribute="width" constant="84" id="bfl-IH-SSP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AnimateHub" translatesAutoresizingMaskIntoConstraints="NO" id="vxY-tS-jo0">
+                                <rect key="frame" x="50" y="70" width="274" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="G9Y-c1-fBp"/>
+                                    <constraint firstAttribute="height" constant="36" id="s5X-tE-UeK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Dot" translatesAutoresizingMaskIntoConstraints="NO" id="fzU-rI-Una">
+                                <rect key="frame" x="111" y="56" width="11" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="11" id="Fbq-bp-Sfc"/>
+                                    <constraint firstAttribute="height" constant="11" id="NAR-nS-49U"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fzU-rI-Una" firstAttribute="top" secondItem="aN2-Y4-hIG" secondAttribute="bottom" constant="56" id="6im-Sg-qbr"/>
+                            <constraint firstItem="vxY-tS-jo0" firstAttribute="top" secondItem="Psh-jV-q85" secondAttribute="top" constant="70" id="7Tu-Tc-XNJ"/>
+                            <constraint firstItem="lAO-sM-0S5" firstAttribute="top" secondItem="aN2-Y4-hIG" secondAttribute="bottom" constant="74" id="8QC-Hg-fJE"/>
+                            <constraint firstItem="9ow-vQ-PBn" firstAttribute="top" secondItem="Puk-Ck-Yp5" secondAttribute="bottom" constant="105" id="O0c-h5-S6x"/>
+                            <constraint firstItem="elr-8D-grE" firstAttribute="top" secondItem="lAO-sM-0S5" secondAttribute="bottom" constant="49" id="VDP-iB-JXN"/>
+                            <constraint firstItem="A69-hj-shh" firstAttribute="bottom" secondItem="X9E-3G-9gX" secondAttribute="top" id="VHt-Tq-mm6"/>
+                            <constraint firstAttribute="trailing" secondItem="lAO-sM-0S5" secondAttribute="trailing" constant="25" id="ZEd-Ac-Ppw"/>
+                            <constraint firstItem="A69-hj-shh" firstAttribute="centerX" secondItem="vxY-tS-jo0" secondAttribute="centerX" id="ZWG-0v-klV"/>
+                            <constraint firstItem="Puk-Ck-Yp5" firstAttribute="top" secondItem="aN2-Y4-hIG" secondAttribute="bottom" constant="50" id="b4p-RQ-AQ9"/>
+                            <constraint firstItem="Puk-Ck-Yp5" firstAttribute="leading" secondItem="Psh-jV-q85" secondAttribute="leading" constant="20" id="bAE-nk-arn"/>
+                            <constraint firstAttribute="trailing" secondItem="elr-8D-grE" secondAttribute="trailing" constant="91" id="cFh-gy-oce"/>
+                            <constraint firstItem="vxY-tS-jo0" firstAttribute="centerY" secondItem="Psh-jV-q85" secondAttribute="centerY" id="d22-7y-uE4"/>
+                            <constraint firstItem="fzU-rI-Una" firstAttribute="centerX" secondItem="Psh-jV-q85" secondAttribute="centerX" constant="-71" id="hdb-3h-PVm"/>
+                            <constraint firstItem="9ow-vQ-PBn" firstAttribute="leading" secondItem="Psh-jV-q85" secondAttribute="leading" constant="5" id="kCL-Ew-3ke"/>
+                            <constraint firstItem="vxY-tS-jo0" firstAttribute="centerX" secondItem="Psh-jV-q85" secondAttribute="centerX" id="lf2-L3-bZZ"/>
+                            <constraint firstAttribute="trailing" secondItem="fMN-vj-c4d" secondAttribute="trailing" constant="30" id="p5r-tC-Cl1"/>
+                            <constraint firstItem="fzU-rI-Una" firstAttribute="top" secondItem="aN2-Y4-hIG" secondAttribute="bottom" constant="56" id="pgH-xX-mxu"/>
+                            <constraint firstItem="X9E-3G-9gX" firstAttribute="top" secondItem="fMN-vj-c4d" secondAttribute="bottom" constant="28" id="sNl-Gj-ExA"/>
+                            <constraint firstItem="fzU-rI-Una" firstAttribute="top" secondItem="Psh-jV-q85" secondAttribute="topMargin" constant="56" id="tLS-YF-q54"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="d22-7y-uE4"/>
+                                <exclude reference="6im-Sg-qbr"/>
+                                <exclude reference="pgH-xX-mxu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="reV-cj-4bO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Bubble1" destination="Puk-Ck-Yp5" id="5TY-xw-36J"/>
+                        <outlet property="Bubble2" destination="lAO-sM-0S5" id="6tA-Ai-Cfz"/>
+                        <outlet property="Bubble3" destination="9ow-vQ-PBn" id="dZM-GH-QiB"/>
+                        <outlet property="Bubble4" destination="elr-8D-grE" id="Ege-Ur-cUX"/>
+                        <outlet property="Bubble5" destination="fMN-vj-c4d" id="g1z-zu-Zee"/>
+                        <outlet property="animateHub" destination="vxY-tS-jo0" id="HJl-cZ-kJr"/>
+                        <outlet property="bubble1" destination="Puk-Ck-Yp5" id="Mcm-uR-vy5"/>
+                        <outlet property="dot" destination="fzU-rI-Una" id="EFW-p2-e2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFv-oK-G7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268.5" y="-213.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AnimateHub" width="274" height="36"/>
+        <image name="Background" width="375" height="667"/>
+        <image name="Bubble1" width="130" height="130"/>
+        <image name="Bubble2" width="124" height="124"/>
+        <image name="Bubble3" width="120" height="120"/>
+        <image name="Bubble4" width="84" height="84"/>
+        <image name="Bubble5" width="100" height="100"/>
+        <image name="Dot" width="11" height="11"/>
+    </resources>
+</document>

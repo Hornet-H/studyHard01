@@ -1,12 +1,45 @@
 PODS:
   - Masonry (1.0.1)
+  - YYAsyncLayer (1.0)
+  - YYCache (1.0.3)
+  - YYCategories (1.0.3):
+    - YYCategories/no-arc (= 1.0.3)
+  - YYCategories/no-arc (1.0.3)
+  - YYDispatchQueuePool (1.0)
+  - YYImage (1.0.3):
+    - YYImage/Core (= 1.0.3)
+  - YYImage/Core (1.0.3)
+  - YYKeyboardManager (1.0.1)
+  - YYModel (1.0.4)
+  - YYText (1.0.5)
+  - YYWebImage (1.0.4):
+    - YYCache
+    - YYImage
 
 DEPENDENCIES:
   - Masonry (~> 1.0.1)
+  - YYAsyncLayer (~> 1.0)
+  - YYCache (~> 1.0.3)
+  - YYCategories (~> 1.0.3)
+  - YYDispatchQueuePool (~> 1.0)
+  - YYImage (~> 1.0.3)
+  - YYKeyboardManager (~> 1.0.1)
+  - YYModel (~> 1.0.4)
+  - YYText (~> 1.0.5)
+  - YYWebImage (~> 1.0.4)
 
 SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYCategories: 0fd4d9eb0994d8d0e355beb4081c8f7202a82b7b
+  YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
+  YYImage: 362f44ffba1fc498f2152060f3bb54ed84600981
+  YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
+  YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
 
-PODFILE CHECKSUM: da9515a05aa08ec09423201bf36296ed36417b4c
+PODFILE CHECKSUM: 5af5d8979f678f36fee756c8f9f8c91100e12577
 
 COCOAPODS: 1.0.1

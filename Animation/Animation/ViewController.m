@@ -59,6 +59,8 @@
 
 - (NSArray *)controllerArr{
     if (!_controllerArr) {
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"HFLogin"bundle:[NSBundle mainBundle]];
+        HFLoginViewController *loginViewController = (HFLoginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"HFLoginViewController"];
         _controllerArr = @[[[HFPositionViewController alloc]initWithTitle:@"Position" ],
                            [[HFOpacityViewController alloc]initWithTitle:@"Opacity"],
                            [[HFScaleViewController alloc]initWithTitle:@"Scale"],
@@ -67,7 +69,7 @@
                            [[HFRepeatViewController alloc]initWithTitle:@"Repeat"],
                            [[HFEasingViewController alloc]initWithTitle:@"Easing"],
                            [[HFSpringViewController alloc]initWithTitle:@"Spring"],
-                           [[HFLoginViewController alloc]initWithTitle:@"Login"],
+                           loginViewController,
                            [[HFKeyFrameViewController alloc]initWithTitle:@"KeyFrame"],
                            [[HFLoginAutoLayoutViewController alloc]initWithTitle:@"Login-AutoLayout"]
                           ];
