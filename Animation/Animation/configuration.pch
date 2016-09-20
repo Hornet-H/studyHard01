@@ -8,12 +8,10 @@
 
 #define MAS_SHORTHAND_GLOBALS
 #import "Masonry.h"
+#import "YYCategories.h"
 
-#import "UIView+HF.h"
 #define kWeakObject(obj) __weak __typeof(obj) weakObject = obj;
 #define kIOSVersion ((float)[[[UIDevice currentDevice] systemVersion] doubleValue])
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight  [UIScreen mainScreen].bounds.size.height
 
 #define randomColor [UIColor colorWithRed:arc4random_uniform(255.0)/255.0 green:arc4random_uniform(255.0)/255.0 blue:arc4random_uniform(255.0)/255.0 alpha:1.0]
 #define margin 20
