@@ -1,4 +1,5 @@
 PODS:
+  - IQKeyboardManager (4.0.5)
   - Masonry (1.0.1)
   - YYAsyncLayer (1.0)
   - YYCache (1.0.3)
@@ -17,6 +18,7 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
+  - IQKeyboardManager (~> 4.0.5)
   - Masonry (~> 1.0.1)
   - YYAsyncLayer (~> 1.0)
   - YYCache (~> 1.0.3)
@@ -29,6 +31,7 @@ DEPENDENCIES:
   - YYWebImage (~> 1.0.4)
 
 SPEC CHECKSUMS:
+  IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
@@ -40,6 +43,6 @@ SPEC CHECKSUMS:
   YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
   YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
 
-PODFILE CHECKSUM: 5af5d8979f678f36fee756c8f9f8c91100e12577
+PODFILE CHECKSUM: 971d577e6d39ff11b7a531135a726e81734b7e3b
 
 COCOAPODS: 1.0.1

@@ -26,4 +26,5 @@ pod 'YYKeyboardManager', '~> 1.0.1'
 pod 'YYDispatchQueuePool', '~> 1.0'
 pod 'YYCategories', '~> 1.0.3'
 pod 'YYAsyncLayer', '~> 1.0'
+pod 'IQKeyboardManager', '~> 4.0.5'
 end

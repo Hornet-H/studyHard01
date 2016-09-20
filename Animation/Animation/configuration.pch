@@ -9,6 +9,7 @@
 #define MAS_SHORTHAND_GLOBALS
 #import "Masonry.h"
 #import "YYCategories.h"
+#import "IQKeyboardManager.h"
 
 #define kWeakObject(obj) __weak __typeof(obj) weakObject = obj;
 #define kIOSVersion ((float)[[[UIDevice currentDevice] systemVersion] doubleValue])

@@ -22,6 +22,7 @@
 		878258F51D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258F41D8E722F00A6A70B /* HFLoginAutoLayoutViewController.m */; };
 		878258F71D8F99E000A6A70B /* HFLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878258F61D8F99E000A6A70B /* HFLogin.storyboard */; };
 		878258FA1D90CB1E00A6A70B /* UIView+HF.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258F81D90CB1E00A6A70B /* UIView+HF.m */; };
+		878258FD1D91288200A6A70B /* HFLoginSucessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878258FC1D91288200A6A70B /* HFLoginSucessViewController.m */; };
 		87FBB5CA1D88FE0E0043418B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5C91D88FE0E0043418B /* main.m */; };
 		87FBB5CD1D88FE0E0043418B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5CC1D88FE0E0043418B /* AppDelegate.m */; };
 		87FBB5D01D88FE0E0043418B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5CF1D88FE0E0043418B /* ViewController.m */; };
@@ -80,6 +81,8 @@
 		878258F61D8F99E000A6A70B /* HFLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HFLogin.storyboard; sourceTree = "<group>"; };
 		878258F81D90CB1E00A6A70B /* UIView+HF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HF.m"; sourceTree = "<group>"; };
 		878258F91D90CB1E00A6A70B /* UIView+HF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HF.h"; sourceTree = "<group>"; };
+		878258FB1D91288200A6A70B /* HFLoginSucessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLoginSucessViewController.h; sourceTree = "<group>"; };
+		878258FC1D91288200A6A70B /* HFLoginSucessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLoginSucessViewController.m; sourceTree = "<group>"; };
 		87FBB5C51D88FE0E0043418B /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FBB5C91D88FE0E0043418B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87FBB5CB1D88FE0E0043418B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				878258EB1D8E71F700A6A70B /* HFSpringViewController.m */,
 				878258ED1D8E720800A6A70B /* HFLoginViewController.h */,
 				878258EE1D8E720800A6A70B /* HFLoginViewController.m */,
+				878258FB1D91288200A6A70B /* HFLoginSucessViewController.h */,
+				878258FC1D91288200A6A70B /* HFLoginSucessViewController.m */,
 				878258F61D8F99E000A6A70B /* HFLogin.storyboard */,
 				878258F01D8E721500A6A70B /* HFKeyFrameViewController.h */,
 				878258F11D8E721500A6A70B /* HFKeyFrameViewController.m */,
@@ -575,6 +580,7 @@
 				878258E01D8E71BF00A6A70B /* HFColorViewController.m in Sources */,
 				878258E91D8E71E600A6A70B /* HFEasingViewController.m in Sources */,
 				87FBB5CA1D88FE0E0043418B /* main.m in Sources */,
+				878258FD1D91288200A6A70B /* HFLoginSucessViewController.m in Sources */,
 				878258E61D8E71D600A6A70B /* HFRepeatViewController.m in Sources */,
 				878258EC1D8E71F700A6A70B /* HFSpringViewController.m in Sources */,
 			);
