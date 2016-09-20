@@ -32,12 +32,17 @@
     self.Bubble3.transform = CGAffineTransformMakeScale(0, 0);
     self.Bubble4.transform = CGAffineTransformMakeScale(0, 0);
     self.Bubble5.transform = CGAffineTransformMakeScale(0, 0);
+//    self.animateHub.hidden = YES;
+   
+}
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    
     self.animateHub.centerX -= kScreenWidth;
     self.dot.centerX -= kScreenWidth;
-}
 
+}
 - (void)viewDidAppear:(BOOL)animated{
-    
     [UIView animateWithDuration:0.3 delay:0.3 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:0 animations:^{
         self.Bubble1.transform = CGAffineTransformMakeScale(1, 1);
         self.Bubble4.transform = CGAffineTransformMakeScale(1, 1);
@@ -48,5 +53,6 @@
         self.Bubble2.transform = CGAffineTransformMakeScale(1, 1);
         self.Bubble3.transform = CGAffineTransformMakeScale(1, 1);
     } completion:nil];
+    
 }
 @end
