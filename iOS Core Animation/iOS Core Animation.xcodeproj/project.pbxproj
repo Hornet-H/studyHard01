@@ -1,0 +1,1461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8718753F1DF6516000E5A9EF /* HFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8718753E1DF6516000E5A9EF /* HFTableViewController.m */; };
+		872925B71DF6AA1E005CC5A8 /* HFAttributeControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 872925B61DF6AA1E005CC5A8 /* HFAttributeControllerViewController.m */; };
+		872925B91DF6AA4D005CC5A8 /* Attribute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872925B81DF6AA4D005CC5A8 /* Attribute.storyboard */; };
+		872925BB1DF6B68A005CC5A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872925BA1DF6B68A005CC5A8 /* Images.xcassets */; };
+		8747C0F91E03B75F006FB72B /* HFCalculateDurationOfTheFrameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8747C0F81E03B75F006FB72B /* HFCalculateDurationOfTheFrameController.m */; };
+		8747C0FB1E03B794006FB72B /* CalculateDurationOfFrame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8747C0FA1E03B794006FB72B /* CalculateDurationOfFrame.storyboard */; };
+		87715D361DFFE836005D1B94 /* HFUIViewAnimationBufferController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87715D351DFFE836005D1B94 /* HFUIViewAnimationBufferController.m */; };
+		87715D3D1E00CFE8005D1B94 /* HFBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87715D3C1E00CFE8005D1B94 /* HFBasicViewController.m */; };
+		87715D471E00D12D005D1B94 /* HFBufferKeyFrameAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87715D461E00D12D005D1B94 /* HFBufferKeyFrameAnimationController.m */; };
+		87715D491E00D141005D1B94 /* BufferKeyFrameAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87715D481E00D141005D1B94 /* BufferKeyFrameAnimation.storyboard */; };
+		87715D4D1E00E9C7005D1B94 /* HFRetrieveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87715D4C1E00E9C7005D1B94 /* HFRetrieveController.m */; };
+		87715D541E00EA20005D1B94 /* RetrievePoint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87715D531E00EA20005D1B94 /* RetrievePoint.storyboard */; };
+		877534D41DF7DB3600754DC5 /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877534D31DF7DB3600754DC5 /* Clock.storyboard */; };
+		877534D71DF7DB9F00754DC5 /* HFClockAniTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534D61DF7DB9F00754DC5 /* HFClockAniTagViewController.m */; };
+		877534DC1DF7EA6700754DC5 /* HFKeyframeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534DB1DF7EA6700754DC5 /* HFKeyframeAnimationController.m */; };
+		877534DE1DF7EB8B00754DC5 /* keyFrameAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877534DD1DF7EB8B00754DC5 /* keyFrameAnimation.storyboard */; };
+		877534E01DF8052100754DC5 /* keyFrameAnimationCGPath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877534DF1DF8052100754DC5 /* keyFrameAnimationCGPath.storyboard */; };
+		877534E31DF8054900754DC5 /* HFkeyFrameAnimationCGPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534E21DF8054900754DC5 /* HFkeyFrameAnimationCGPathController.m */; };
+		877534EC1DF8F82900754DC5 /* HFVirtualPropertiesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534EB1DF8F82900754DC5 /* HFVirtualPropertiesController.m */; };
+		877534EE1DF8F84100754DC5 /* VirtualProperties.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877534ED1DF8F84100754DC5 /* VirtualProperties.storyboard */; };
+		877534F11DF90BDD00754DC5 /* HFGroupAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534F01DF90BDD00754DC5 /* HFGroupAnimationController.m */; };
+		877534F31DF90BF000754DC5 /* groupAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877534F21DF90BF000754DC5 /* groupAnimation.storyboard */; };
+		877534F61DF943A000754DC5 /* HFTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534F51DF943A000754DC5 /* HFTransitionController.m */; };
+		877534F81DF943BC00754DC5 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877534F71DF943BC00754DC5 /* Transition.storyboard */; };
+		877534FA1DF9571100754DC5 /*  layerTreeAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877534F91DF9571100754DC5 /*  layerTreeAnimation.storyboard */; };
+		877534FD1DF9573E00754DC5 /* HFLayerTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534FC1DF9573E00754DC5 /* HFLayerTreeController.m */; };
+		877535001DF95E5200754DC5 /* HFChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877534FF1DF95E5200754DC5 /* HFChildViewController.m */; };
+		877535841DF9672600754DC5 /* HFUIViewTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877535831DF9672600754DC5 /* HFUIViewTransitionController.m */; };
+		877535861DFA39C800754DC5 /* HFUIViewTransitionController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877535851DFA39C800754DC5 /* HFUIViewTransitionController.storyboard */; };
+		877535891DFA4FA000754DC5 /* HFCustomTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877535881DFA4FA000754DC5 /* HFCustomTransitionController.m */; };
+		8775358B1DFA4FB500754DC5 /* CustomTransition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8775358A1DFA4FB500754DC5 /* CustomTransition.storyboard */; };
+		8775358E1DFA987300754DC5 /* HFCancelAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775358D1DFA987300754DC5 /* HFCancelAnimationController.m */; };
+		877535901DFA988700754DC5 /* CancelAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8775358F1DFA988700754DC5 /* CancelAnimation.storyboard */; };
+		877535951DFAA91800754DC5 /* CAMediaTiming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877535941DFAA91800754DC5 /* CAMediaTiming.storyboard */; };
+		877535981DFAA94700754DC5 /* HFCAMediaTimingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877535971DFAA94700754DC5 /* HFCAMediaTimingController.m */; };
+		8775359D1DFE6E8A00754DC5 /* HFRepeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775359C1DFE6E8A00754DC5 /* HFRepeatViewController.m */; };
+		8775359F1DFE6EAC00754DC5 /* Repeat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8775359E1DFE6EAC00754DC5 /* Repeat.storyboard */; };
+		877535A31DFE8F1900754DC5 /* HFRelativeTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877535A21DFE8F1900754DC5 /* HFRelativeTimeController.m */; };
+		877535A51DFE8F5600754DC5 /* RelativeTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877535A41DFE8F5600754DC5 /* RelativeTime.storyboard */; };
+		877535A91DFFC10900754DC5 /* HFManualAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877535A81DFFC10900754DC5 /* HFManualAnimationController.m */; };
+		877535AB1DFFC16400754DC5 /* ManualAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877535AA1DFFC16400754DC5 /* ManualAnimation.storyboard */; };
+		877535B11DFFDCC200754DC5 /* HFSpeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877535B01DFFDCC200754DC5 /* HFSpeedTableViewController.m */; };
+		877535B41DFFE06B00754DC5 /* HFCAMediaTimingFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877535B31DFFE06B00754DC5 /* HFCAMediaTimingFunctionController.m */; };
+		8788A8781E01439B009F7A37 /* HFKeyframeAnimationBufferController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8788A8771E01439B009F7A37 /* HFKeyframeAnimationBufferController.m */; };
+		8788A87A1E0145C0009F7A37 /* KeyframeAnimationBuffer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8788A8791E0145C0009F7A37 /* KeyframeAnimationBuffer.storyboard */; };
+		8788A87D1E024176009F7A37 /* HFInsertValueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8788A87C1E024176009F7A37 /* HFInsertValueController.m */; };
+		8788A87F1E02418F009F7A37 /* InsertValueController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8788A87E1E02418F009F7A37 /* InsertValueController.storyboard */; };
+		8788A8851E026E17009F7A37 /* CAKeyframeAnimation+AHEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8788A8821E026E17009F7A37 /* CAKeyframeAnimation+AHEasing.m */; };
+		8788A8861E026E17009F7A37 /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 8788A8831E026E17009F7A37 /* easing.c */; };
+		87B882CC1DEC265900E20C4B /* HFCATransformLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B882CB1DEC265900E20C4B /* HFCATransformLayerController.m */; };
+		87B882D21DED533E00E20C4B /* HFCAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B882D11DED533E00E20C4B /* HFCAGradientLayerController.m */; };
+		87B882D61DED672500E20C4B /* HFCAReplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B882D51DED672500E20C4B /* HFCAReplicatorViewController.m */; };
+		87B882DC1DEE70FB00E20C4B /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B882DB1DEE70FB00E20C4B /* ReflectionView.m */; };
+		87B882E41DEE9AE800E20C4B /* HFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B882E31DEE9AE800E20C4B /* HFScrollView.m */; };
+		87B882E71DEEA35000E20C4B /* HFScrollLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B882E61DEEA35000E20C4B /* HFScrollLayerController.m */; };
+		87B882EA1DEEB7F900E20C4B /* HFCATiledLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B882E91DEEB7F900E20C4B /* HFCATiledLayerController.m */; };
+		87B883411DEEC9C900E20C4B /* HFCAEmitterLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B883401DEEC9C900E20C4B /* HFCAEmitterLayerController.m */; };
+		87B883441DEFF00800E20C4B /* HFCAEAGLLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B883431DEFF00800E20C4B /* HFCAEAGLLayerController.m */; };
+		87B883461DEFF21500E20C4B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B883451DEFF21500E20C4B /* OpenGLES.framework */; };
+		87B883521DF1076200E20C4B /* HFtransactionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B883511DF1076200E20C4B /* HFtransactionController.m */; };
+		87B883551DF559A800E20C4B /* HFPresentationLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B883541DF559A800E20C4B /* HFPresentationLayerController.m */; };
+		87B883571DF559B500E20C4B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B883561DF559B500E20C4B /* Storyboard.storyboard */; };
+		87CD1F4D1E02853800B60D06 /* HFBasedOnTimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CD1F4C1E02853800B60D06 /* HFBasedOnTimerTableViewController.m */; };
+		87CD1F501E028EC000B60D06 /* HFTimeFrameAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CD1F4F1E028EC000B60D06 /* HFTimeFrameAnimationController.m */; };
+		87CD1F521E028EDC00B60D06 /* TimeFrameAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CD1F511E028EDC00B60D06 /* TimeFrameAnimation.storyboard */; };
+		87CF2D9F1DFFE1270094D96A /* CAMediaTimingFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CF2D9E1DFFE1270094D96A /* CAMediaTimingFunction.storyboard */; };
+		87CF2DA51DFFE72F0094D96A /* AnimationBuffer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CF2DA41DFFE72F0094D96A /* AnimationBuffer.storyboard */; };
+		87D2A1D61DE6934800F239E1 /* HFCubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D2A1D51DE6934800F239E1 /* HFCubeViewController.m */; };
+		87D2A1D81DE6938E00F239E1 /* cubeface1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D2A1D71DE6938E00F239E1 /* cubeface1.xib */; };
+		87D2A1E81DE7EB4200F239E1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D2A1E71DE7EB4200F239E1 /* GLKit.framework */; };
+		87D2A1EC1DE81F5500F239E1 /* HFCAShaperLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D2A1EB1DE81F5500F239E1 /* HFCAShaperLayerViewController.m */; };
+		87D2A1F61DE839AC00F239E1 /* HFCATextLyerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D2A1F51DE839AC00F239E1 /* HFCATextLyerViewController.m */; };
+		87D2A1F81DE8442A00F239E1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D2A1F71DE8442A00F239E1 /* CoreText.framework */; };
+		87D2A1FB1DEC005500F239E1 /* HFLayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D2A1FA1DEC005500F239E1 /* HFLayerLabel.m */; };
+		87FDF5AD1DDED3A600808F33 /* HFLayerResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDF5AC1DDED3A600808F33 /* HFLayerResponseViewController.m */; };
+		87FDF5F71DE2842600808F33 /* HFLayerShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDF5F61DE2842600808F33 /* HFLayerShadowViewController.m */; };
+		87FDF5FA1DE2CA4B00808F33 /* HFClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDF5F91DE2CA4B00808F33 /* HFClockViewController.m */; };
+		87FDF6071DE42E8100808F33 /* HFRasterizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDF6061DE42E8100808F33 /* HFRasterizeViewController.m */; };
+		87FDF60A1DE4426500808F33 /* HFAffineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDF6091DE4426500808F33 /* HFAffineViewController.m */; };
+		87FDF6911DE57A1F00808F33 /* HF3DAFFineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FDF6901DE57A1F00808F33 /* HF3DAFFineViewController.m */; };
+		87FEAF451DDD7F34008454B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FEAF441DDD7F34008454B0 /* main.m */; };
+		87FEAF481DDD7F34008454B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FEAF471DDD7F34008454B0 /* AppDelegate.m */; };
+		87FEAF4B1DDD7F34008454B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FEAF4A1DDD7F34008454B0 /* ViewController.m */; };
+		87FEAF4E1DDD7F34008454B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FEAF4C1DDD7F34008454B0 /* Main.storyboard */; };
+		87FEAF501DDD7F34008454B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87FEAF4F1DDD7F34008454B0 /* Assets.xcassets */; };
+		87FEAF531DDD7F34008454B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FEAF511DDD7F34008454B0 /* LaunchScreen.storyboard */; };
+		87FEAF5E1DDD7F34008454B0 /* iOS_Core_AnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FEAF5D1DDD7F34008454B0 /* iOS_Core_AnimationTests.m */; };
+		87FEAF691DDD7F34008454B0 /* iOS_Core_AnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FEAF681DDD7F34008454B0 /* iOS_Core_AnimationUITests.m */; };
+		87FEAF781DDD806B008454B0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FEAF771DDD806B008454B0 /* QuartzCore.framework */; };
+		87FEAF7B1DDDA8CC008454B0 /* HFCalayerDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FEAF7A1DDDA8CC008454B0 /* HFCalayerDelegateController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87FEAF5A1DDD7F34008454B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87FEAF381DDD7F34008454B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87FEAF3F1DDD7F34008454B0;
+			remoteInfo = "iOS Core Animation";
+		};
+		87FEAF651DDD7F34008454B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87FEAF381DDD7F34008454B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87FEAF3F1DDD7F34008454B0;
+			remoteInfo = "iOS Core Animation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8718753D1DF6516000E5A9EF /* HFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableViewController.h; sourceTree = "<group>"; };
+		8718753E1DF6516000E5A9EF /* HFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableViewController.m; sourceTree = "<group>"; };
+		872925B41DF68F3A005CC5A8 /* Command.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.pch; sourceTree = "<group>"; };
+		872925B51DF6AA1E005CC5A8 /* HFAttributeControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFAttributeControllerViewController.h; sourceTree = "<group>"; };
+		872925B61DF6AA1E005CC5A8 /* HFAttributeControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFAttributeControllerViewController.m; sourceTree = "<group>"; };
+		872925B81DF6AA4D005CC5A8 /* Attribute.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Attribute.storyboard; sourceTree = "<group>"; };
+		872925BA1DF6B68A005CC5A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8747C0F71E03B75F006FB72B /* HFCalculateDurationOfTheFrameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCalculateDurationOfTheFrameController.h; sourceTree = "<group>"; };
+		8747C0F81E03B75F006FB72B /* HFCalculateDurationOfTheFrameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCalculateDurationOfTheFrameController.m; sourceTree = "<group>"; };
+		8747C0FA1E03B794006FB72B /* CalculateDurationOfFrame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalculateDurationOfFrame.storyboard; sourceTree = "<group>"; };
+		87715D341DFFE836005D1B94 /* HFUIViewAnimationBufferController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFUIViewAnimationBufferController.h; sourceTree = "<group>"; };
+		87715D351DFFE836005D1B94 /* HFUIViewAnimationBufferController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFUIViewAnimationBufferController.m; sourceTree = "<group>"; };
+		87715D3B1E00CFE8005D1B94 /* HFBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFBasicViewController.h; sourceTree = "<group>"; };
+		87715D3C1E00CFE8005D1B94 /* HFBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFBasicViewController.m; sourceTree = "<group>"; };
+		87715D451E00D12D005D1B94 /* HFBufferKeyFrameAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFBufferKeyFrameAnimationController.h; sourceTree = "<group>"; };
+		87715D461E00D12D005D1B94 /* HFBufferKeyFrameAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFBufferKeyFrameAnimationController.m; sourceTree = "<group>"; };
+		87715D481E00D141005D1B94 /* BufferKeyFrameAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BufferKeyFrameAnimation.storyboard; sourceTree = "<group>"; };
+		87715D4B1E00E9C7005D1B94 /* HFRetrieveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRetrieveController.h; sourceTree = "<group>"; };
+		87715D4C1E00E9C7005D1B94 /* HFRetrieveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRetrieveController.m; sourceTree = "<group>"; };
+		87715D531E00EA20005D1B94 /* RetrievePoint.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RetrievePoint.storyboard; sourceTree = "<group>"; };
+		877534D31DF7DB3600754DC5 /* Clock.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
+		877534D51DF7DB9F00754DC5 /* HFClockAniTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFClockAniTagViewController.h; sourceTree = "<group>"; };
+		877534D61DF7DB9F00754DC5 /* HFClockAniTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFClockAniTagViewController.m; sourceTree = "<group>"; };
+		877534DA1DF7EA6700754DC5 /* HFKeyframeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFKeyframeAnimationController.h; sourceTree = "<group>"; };
+		877534DB1DF7EA6700754DC5 /* HFKeyframeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFKeyframeAnimationController.m; sourceTree = "<group>"; };
+		877534DD1DF7EB8B00754DC5 /* keyFrameAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = keyFrameAnimation.storyboard; sourceTree = "<group>"; };
+		877534DF1DF8052100754DC5 /* keyFrameAnimationCGPath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = keyFrameAnimationCGPath.storyboard; sourceTree = "<group>"; };
+		877534E11DF8054900754DC5 /* HFkeyFrameAnimationCGPathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFkeyFrameAnimationCGPathController.h; sourceTree = "<group>"; };
+		877534E21DF8054900754DC5 /* HFkeyFrameAnimationCGPathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFkeyFrameAnimationCGPathController.m; sourceTree = "<group>"; };
+		877534EA1DF8F82900754DC5 /* HFVirtualPropertiesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFVirtualPropertiesController.h; sourceTree = "<group>"; };
+		877534EB1DF8F82900754DC5 /* HFVirtualPropertiesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFVirtualPropertiesController.m; sourceTree = "<group>"; };
+		877534ED1DF8F84100754DC5 /* VirtualProperties.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VirtualProperties.storyboard; sourceTree = "<group>"; };
+		877534EF1DF90BDD00754DC5 /* HFGroupAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFGroupAnimationController.h; sourceTree = "<group>"; };
+		877534F01DF90BDD00754DC5 /* HFGroupAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFGroupAnimationController.m; sourceTree = "<group>"; };
+		877534F21DF90BF000754DC5 /* groupAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = groupAnimation.storyboard; sourceTree = "<group>"; };
+		877534F41DF943A000754DC5 /* HFTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTransitionController.h; sourceTree = "<group>"; };
+		877534F51DF943A000754DC5 /* HFTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTransitionController.m; sourceTree = "<group>"; };
+		877534F71DF943BC00754DC5 /* Transition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
+		877534F91DF9571100754DC5 /*  layerTreeAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = " layerTreeAnimation.storyboard"; sourceTree = "<group>"; };
+		877534FB1DF9573E00754DC5 /* HFLayerTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLayerTreeController.h; sourceTree = "<group>"; };
+		877534FC1DF9573E00754DC5 /* HFLayerTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLayerTreeController.m; sourceTree = "<group>"; };
+		877534FE1DF95E5200754DC5 /* HFChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFChildViewController.h; sourceTree = "<group>"; };
+		877534FF1DF95E5200754DC5 /* HFChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFChildViewController.m; sourceTree = "<group>"; };
+		877535821DF9672600754DC5 /* HFUIViewTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFUIViewTransitionController.h; sourceTree = "<group>"; };
+		877535831DF9672600754DC5 /* HFUIViewTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFUIViewTransitionController.m; sourceTree = "<group>"; };
+		877535851DFA39C800754DC5 /* HFUIViewTransitionController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HFUIViewTransitionController.storyboard; sourceTree = "<group>"; };
+		877535871DFA4FA000754DC5 /* HFCustomTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCustomTransitionController.h; sourceTree = "<group>"; };
+		877535881DFA4FA000754DC5 /* HFCustomTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCustomTransitionController.m; sourceTree = "<group>"; };
+		8775358A1DFA4FB500754DC5 /* CustomTransition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomTransition.storyboard; sourceTree = "<group>"; };
+		8775358C1DFA987300754DC5 /* HFCancelAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCancelAnimationController.h; sourceTree = "<group>"; };
+		8775358D1DFA987300754DC5 /* HFCancelAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCancelAnimationController.m; sourceTree = "<group>"; };
+		8775358F1DFA988700754DC5 /* CancelAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CancelAnimation.storyboard; sourceTree = "<group>"; };
+		877535941DFAA91800754DC5 /* CAMediaTiming.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CAMediaTiming.storyboard; sourceTree = "<group>"; };
+		877535961DFAA94700754DC5 /* HFCAMediaTimingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCAMediaTimingController.h; sourceTree = "<group>"; };
+		877535971DFAA94700754DC5 /* HFCAMediaTimingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCAMediaTimingController.m; sourceTree = "<group>"; };
+		8775359B1DFE6E8A00754DC5 /* HFRepeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRepeatViewController.h; sourceTree = "<group>"; };
+		8775359C1DFE6E8A00754DC5 /* HFRepeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRepeatViewController.m; sourceTree = "<group>"; };
+		8775359E1DFE6EAC00754DC5 /* Repeat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Repeat.storyboard; sourceTree = "<group>"; };
+		877535A11DFE8F1900754DC5 /* HFRelativeTimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRelativeTimeController.h; sourceTree = "<group>"; };
+		877535A21DFE8F1900754DC5 /* HFRelativeTimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRelativeTimeController.m; sourceTree = "<group>"; };
+		877535A41DFE8F5600754DC5 /* RelativeTime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelativeTime.storyboard; sourceTree = "<group>"; };
+		877535A71DFFC10900754DC5 /* HFManualAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFManualAnimationController.h; sourceTree = "<group>"; };
+		877535A81DFFC10900754DC5 /* HFManualAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFManualAnimationController.m; sourceTree = "<group>"; };
+		877535AA1DFFC16400754DC5 /* ManualAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManualAnimation.storyboard; sourceTree = "<group>"; };
+		877535AF1DFFDCC200754DC5 /* HFSpeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSpeedTableViewController.h; sourceTree = "<group>"; };
+		877535B01DFFDCC200754DC5 /* HFSpeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFSpeedTableViewController.m; sourceTree = "<group>"; };
+		877535B21DFFE06B00754DC5 /* HFCAMediaTimingFunctionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCAMediaTimingFunctionController.h; sourceTree = "<group>"; };
+		877535B31DFFE06B00754DC5 /* HFCAMediaTimingFunctionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCAMediaTimingFunctionController.m; sourceTree = "<group>"; };
+		8788A8761E01439B009F7A37 /* HFKeyframeAnimationBufferController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFKeyframeAnimationBufferController.h; sourceTree = "<group>"; };
+		8788A8771E01439B009F7A37 /* HFKeyframeAnimationBufferController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFKeyframeAnimationBufferController.m; sourceTree = "<group>"; };
+		8788A8791E0145C0009F7A37 /* KeyframeAnimationBuffer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KeyframeAnimationBuffer.storyboard; sourceTree = "<group>"; };
+		8788A87B1E024176009F7A37 /* HFInsertValueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFInsertValueController.h; sourceTree = "<group>"; };
+		8788A87C1E024176009F7A37 /* HFInsertValueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFInsertValueController.m; sourceTree = "<group>"; };
+		8788A87E1E02418F009F7A37 /* InsertValueController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InsertValueController.storyboard; sourceTree = "<group>"; };
+		8788A8811E026E17009F7A37 /* CAKeyframeAnimation+AHEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAKeyframeAnimation+AHEasing.h"; sourceTree = "<group>"; };
+		8788A8821E026E17009F7A37 /* CAKeyframeAnimation+AHEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+AHEasing.m"; sourceTree = "<group>"; };
+		8788A8831E026E17009F7A37 /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
+		8788A8841E026E17009F7A37 /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
+		87B882CA1DEC265900E20C4B /* HFCATransformLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCATransformLayerController.h; sourceTree = "<group>"; };
+		87B882CB1DEC265900E20C4B /* HFCATransformLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCATransformLayerController.m; sourceTree = "<group>"; };
+		87B882D01DED533E00E20C4B /* HFCAGradientLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCAGradientLayerController.h; sourceTree = "<group>"; };
+		87B882D11DED533E00E20C4B /* HFCAGradientLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCAGradientLayerController.m; sourceTree = "<group>"; };
+		87B882D41DED672500E20C4B /* HFCAReplicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCAReplicatorViewController.h; sourceTree = "<group>"; };
+		87B882D51DED672500E20C4B /* HFCAReplicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCAReplicatorViewController.m; sourceTree = "<group>"; };
+		87B882DA1DEE70FB00E20C4B /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		87B882DB1DEE70FB00E20C4B /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
+		87B882E21DEE9AE800E20C4B /* HFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFScrollView.h; sourceTree = "<group>"; };
+		87B882E31DEE9AE800E20C4B /* HFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScrollView.m; sourceTree = "<group>"; };
+		87B882E51DEEA35000E20C4B /* HFScrollLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFScrollLayerController.h; sourceTree = "<group>"; };
+		87B882E61DEEA35000E20C4B /* HFScrollLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScrollLayerController.m; sourceTree = "<group>"; };
+		87B882E81DEEB7F900E20C4B /* HFCATiledLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCATiledLayerController.h; sourceTree = "<group>"; };
+		87B882E91DEEB7F900E20C4B /* HFCATiledLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCATiledLayerController.m; sourceTree = "<group>"; };
+		87B8833F1DEEC9C900E20C4B /* HFCAEmitterLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCAEmitterLayerController.h; sourceTree = "<group>"; };
+		87B883401DEEC9C900E20C4B /* HFCAEmitterLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCAEmitterLayerController.m; sourceTree = "<group>"; };
+		87B883421DEFF00800E20C4B /* HFCAEAGLLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCAEAGLLayerController.h; sourceTree = "<group>"; };
+		87B883431DEFF00800E20C4B /* HFCAEAGLLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCAEAGLLayerController.m; sourceTree = "<group>"; };
+		87B883451DEFF21500E20C4B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		87B883501DF1076200E20C4B /* HFtransactionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFtransactionController.h; sourceTree = "<group>"; };
+		87B883511DF1076200E20C4B /* HFtransactionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFtransactionController.m; sourceTree = "<group>"; };
+		87B883531DF559A800E20C4B /* HFPresentationLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFPresentationLayerController.h; sourceTree = "<group>"; };
+		87B883541DF559A800E20C4B /* HFPresentationLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFPresentationLayerController.m; sourceTree = "<group>"; };
+		87B883561DF559B500E20C4B /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		87CD1F4B1E02853800B60D06 /* HFBasedOnTimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFBasedOnTimerTableViewController.h; sourceTree = "<group>"; };
+		87CD1F4C1E02853800B60D06 /* HFBasedOnTimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFBasedOnTimerTableViewController.m; sourceTree = "<group>"; };
+		87CD1F4E1E028EC000B60D06 /* HFTimeFrameAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTimeFrameAnimationController.h; sourceTree = "<group>"; };
+		87CD1F4F1E028EC000B60D06 /* HFTimeFrameAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTimeFrameAnimationController.m; sourceTree = "<group>"; };
+		87CD1F511E028EDC00B60D06 /* TimeFrameAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeFrameAnimation.storyboard; sourceTree = "<group>"; };
+		87CF2D9E1DFFE1270094D96A /* CAMediaTimingFunction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CAMediaTimingFunction.storyboard; sourceTree = "<group>"; };
+		87CF2DA41DFFE72F0094D96A /* AnimationBuffer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimationBuffer.storyboard; sourceTree = "<group>"; };
+		87D2A1D41DE6934800F239E1 /* HFCubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCubeViewController.h; sourceTree = "<group>"; };
+		87D2A1D51DE6934800F239E1 /* HFCubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCubeViewController.m; sourceTree = "<group>"; };
+		87D2A1D71DE6938E00F239E1 /* cubeface1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cubeface1.xib; sourceTree = "<group>"; };
+		87D2A1E71DE7EB4200F239E1 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		87D2A1EA1DE81F5500F239E1 /* HFCAShaperLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCAShaperLayerViewController.h; sourceTree = "<group>"; };
+		87D2A1EB1DE81F5500F239E1 /* HFCAShaperLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCAShaperLayerViewController.m; sourceTree = "<group>"; };
+		87D2A1F41DE839AC00F239E1 /* HFCATextLyerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCATextLyerViewController.h; sourceTree = "<group>"; };
+		87D2A1F51DE839AC00F239E1 /* HFCATextLyerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCATextLyerViewController.m; sourceTree = "<group>"; };
+		87D2A1F71DE8442A00F239E1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		87D2A1F91DEC005500F239E1 /* HFLayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLayerLabel.h; sourceTree = "<group>"; };
+		87D2A1FA1DEC005500F239E1 /* HFLayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLayerLabel.m; sourceTree = "<group>"; };
+		87FDF5AB1DDED3A600808F33 /* HFLayerResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLayerResponseViewController.h; sourceTree = "<group>"; };
+		87FDF5AC1DDED3A600808F33 /* HFLayerResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLayerResponseViewController.m; sourceTree = "<group>"; };
+		87FDF5F51DE2842600808F33 /* HFLayerShadowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFLayerShadowViewController.h; sourceTree = "<group>"; };
+		87FDF5F61DE2842600808F33 /* HFLayerShadowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFLayerShadowViewController.m; sourceTree = "<group>"; };
+		87FDF5F81DE2CA4B00808F33 /* HFClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFClockViewController.h; sourceTree = "<group>"; };
+		87FDF5F91DE2CA4B00808F33 /* HFClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFClockViewController.m; sourceTree = "<group>"; };
+		87FDF6051DE42E8100808F33 /* HFRasterizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRasterizeViewController.h; sourceTree = "<group>"; };
+		87FDF6061DE42E8100808F33 /* HFRasterizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRasterizeViewController.m; sourceTree = "<group>"; };
+		87FDF6081DE4426500808F33 /* HFAffineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFAffineViewController.h; sourceTree = "<group>"; };
+		87FDF6091DE4426500808F33 /* HFAffineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFAffineViewController.m; sourceTree = "<group>"; };
+		87FDF68F1DE57A1F00808F33 /* HF3DAFFineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HF3DAFFineViewController.h; sourceTree = "<group>"; };
+		87FDF6901DE57A1F00808F33 /* HF3DAFFineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HF3DAFFineViewController.m; sourceTree = "<group>"; };
+		87FEAF401DDD7F34008454B0 /* iOS Core Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Core Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FEAF441DDD7F34008454B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87FEAF461DDD7F34008454B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87FEAF471DDD7F34008454B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87FEAF491DDD7F34008454B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87FEAF4A1DDD7F34008454B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87FEAF4D1DDD7F34008454B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87FEAF4F1DDD7F34008454B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87FEAF521DDD7F34008454B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87FEAF541DDD7F34008454B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FEAF591DDD7F34008454B0 /* iOS Core AnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Core AnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FEAF5D1DDD7F34008454B0 /* iOS_Core_AnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Core_AnimationTests.m; sourceTree = "<group>"; };
+		87FEAF5F1DDD7F34008454B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FEAF641DDD7F34008454B0 /* iOS Core AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Core AnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FEAF681DDD7F34008454B0 /* iOS_Core_AnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Core_AnimationUITests.m; sourceTree = "<group>"; };
+		87FEAF6A1DDD7F34008454B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FEAF771DDD806B008454B0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		87FEAF791DDDA8CC008454B0 /* HFCalayerDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCalayerDelegateController.h; sourceTree = "<group>"; };
+		87FEAF7A1DDDA8CC008454B0 /* HFCalayerDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCalayerDelegateController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87FEAF3D1DDD7F34008454B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B883461DEFF21500E20C4B /* OpenGLES.framework in Frameworks */,
+				87D2A1F81DE8442A00F239E1 /* CoreText.framework in Frameworks */,
+				87D2A1E81DE7EB4200F239E1 /* GLKit.framework in Frameworks */,
+				87FEAF781DDD806B008454B0 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FEAF561DDD7F34008454B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FEAF611DDD7F34008454B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8747C0F21E03B6C3006FB72B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		8747C0F31E03B6C4006FB72B /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group1";
+			sourceTree = "<group>";
+		};
+		8747C0F41E03B6C5006FB72B /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group2";
+			sourceTree = "<group>";
+		};
+		8747C0F51E03B6C7006FB72B /* New Group3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group3";
+			sourceTree = "<group>";
+		};
+		8747C0F61E03B6C8006FB72B /* 专业定时器的使用以及计算帧的持续时间 */ = {
+			isa = PBXGroup;
+			children = (
+				8747C0F71E03B75F006FB72B /* HFCalculateDurationOfTheFrameController.h */,
+				8747C0F81E03B75F006FB72B /* HFCalculateDurationOfTheFrameController.m */,
+				8747C0FA1E03B794006FB72B /* CalculateDurationOfFrame.storyboard */,
+			);
+			name = "专业定时器的使用以及计算帧的持续时间";
+			sourceTree = "<group>";
+		};
+		87715D371DFFFE86005D1B94 /* 缓冲和关键帧动画 */ = {
+			isa = PBXGroup;
+			children = (
+				87715D451E00D12D005D1B94 /* HFBufferKeyFrameAnimationController.h */,
+				87715D461E00D12D005D1B94 /* HFBufferKeyFrameAnimationController.m */,
+				87715D481E00D141005D1B94 /* BufferKeyFrameAnimation.storyboard */,
+			);
+			name = "缓冲和关键帧动画";
+			sourceTree = "<group>";
+		};
+		87715D3E1E00CFFF005D1B94 /* Comman */ = {
+			isa = PBXGroup;
+			children = (
+				8788A8801E026E17009F7A37 /* AHEasing */,
+				87715D3B1E00CFE8005D1B94 /* HFBasicViewController.h */,
+				87715D3C1E00CFE8005D1B94 /* HFBasicViewController.m */,
+			);
+			name = Comman;
+			sourceTree = "<group>";
+		};
+		87715D4A1E00E946005D1B94 /* 自定义缓冲函数--曲线上的点的检索和绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				87715D4B1E00E9C7005D1B94 /* HFRetrieveController.h */,
+				87715D4C1E00E9C7005D1B94 /* HFRetrieveController.m */,
+				87715D531E00EA20005D1B94 /* RetrievePoint.storyboard */,
+			);
+			name = "自定义缓冲函数--曲线上的点的检索和绘制";
+			sourceTree = "<group>";
+		};
+		87715D4E1E00E9D0005D1B94 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		87715D4F1E00E9D1005D1B94 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group1";
+			sourceTree = "<group>";
+		};
+		87715D501E00E9D2005D1B94 /* 使用插入值创建一个关键帧动画 */ = {
+			isa = PBXGroup;
+			children = (
+				8788A87B1E024176009F7A37 /* HFInsertValueController.h */,
+				8788A87C1E024176009F7A37 /* HFInsertValueController.m */,
+				8788A87E1E02418F009F7A37 /* InsertValueController.storyboard */,
+			);
+			name = "使用插入值创建一个关键帧动画";
+			sourceTree = "<group>";
+		};
+		87715D511E00E9D3005D1B94 /* 基于关键帧的缓冲 */ = {
+			isa = PBXGroup;
+			children = (
+				8788A8761E01439B009F7A37 /* HFKeyframeAnimationBufferController.h */,
+				8788A8771E01439B009F7A37 /* HFKeyframeAnimationBufferController.m */,
+				8788A8791E0145C0009F7A37 /* KeyframeAnimationBuffer.storyboard */,
+			);
+			name = "基于关键帧的缓冲";
+			sourceTree = "<group>";
+		};
+		87715D521E00E9D4005D1B94 /* 基于定时器的动画 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "基于定时器的动画";
+			sourceTree = "<group>";
+		};
+		877534D81DF7E9B600754DC5 /* 基本动画 */ = {
+			isa = PBXGroup;
+			children = (
+				872925B51DF6AA1E005CC5A8 /* HFAttributeControllerViewController.h */,
+				872925B61DF6AA1E005CC5A8 /* HFAttributeControllerViewController.m */,
+				872925B81DF6AA4D005CC5A8 /* Attribute.storyboard */,
+			);
+			name = "基本动画";
+			sourceTree = "<group>";
+		};
+		877534D91DF7EA2900754DC5 /* 关键帧动画 */ = {
+			isa = PBXGroup;
+			children = (
+				877534DA1DF7EA6700754DC5 /* HFKeyframeAnimationController.h */,
+				877534DB1DF7EA6700754DC5 /* HFKeyframeAnimationController.m */,
+				877534DD1DF7EB8B00754DC5 /* keyFrameAnimation.storyboard */,
+				877534E11DF8054900754DC5 /* HFkeyFrameAnimationCGPathController.h */,
+				877534E21DF8054900754DC5 /* HFkeyFrameAnimationCGPathController.m */,
+				877534DF1DF8052100754DC5 /* keyFrameAnimationCGPath.storyboard */,
+			);
+			name = "关键帧动画";
+			sourceTree = "<group>";
+		};
+		877534E41DF8F78500754DC5 /* 自定义过渡效果 */ = {
+			isa = PBXGroup;
+			children = (
+				877535871DFA4FA000754DC5 /* HFCustomTransitionController.h */,
+				877535881DFA4FA000754DC5 /* HFCustomTransitionController.m */,
+				8775358A1DFA4FB500754DC5 /* CustomTransition.storyboard */,
+			);
+			name = "自定义过渡效果";
+			sourceTree = "<group>";
+		};
+		877534E51DF8F78D00754DC5 /* UIView的过渡动画 */ = {
+			isa = PBXGroup;
+			children = (
+				877535821DF9672600754DC5 /* HFUIViewTransitionController.h */,
+				877535831DF9672600754DC5 /* HFUIViewTransitionController.m */,
+				877535851DFA39C800754DC5 /* HFUIViewTransitionController.storyboard */,
+			);
+			name = "UIView的过渡动画";
+			sourceTree = "<group>";
+		};
+		877534E61DF8F78E00754DC5 /* 图层树动画----参考iOSCoreAnimation2 */ = {
+			isa = PBXGroup;
+			children = (
+				877534FB1DF9573E00754DC5 /* HFLayerTreeController.h */,
+				877534FC1DF9573E00754DC5 /* HFLayerTreeController.m */,
+				877534F91DF9571100754DC5 /*  layerTreeAnimation.storyboard */,
+				877534FE1DF95E5200754DC5 /* HFChildViewController.h */,
+				877534FF1DF95E5200754DC5 /* HFChildViewController.m */,
+			);
+			name = "图层树动画----参考iOSCoreAnimation2";
+			sourceTree = "<group>";
+		};
+		877534E71DF8F78F00754DC5 /* 过渡 */ = {
+			isa = PBXGroup;
+			children = (
+				877534F41DF943A000754DC5 /* HFTransitionController.h */,
+				877534F51DF943A000754DC5 /* HFTransitionController.m */,
+				877534F71DF943BC00754DC5 /* Transition.storyboard */,
+			);
+			name = "过渡";
+			sourceTree = "<group>";
+		};
+		877534E81DF8F79000754DC5 /* 动画组 */ = {
+			isa = PBXGroup;
+			children = (
+				877534EF1DF90BDD00754DC5 /* HFGroupAnimationController.h */,
+				877534F01DF90BDD00754DC5 /* HFGroupAnimationController.m */,
+				877534F21DF90BF000754DC5 /* groupAnimation.storyboard */,
+			);
+			name = "动画组";
+			sourceTree = "<group>";
+		};
+		877534E91DF8F79100754DC5 /* 虚拟属性 */ = {
+			isa = PBXGroup;
+			children = (
+				877534EA1DF8F82900754DC5 /* HFVirtualPropertiesController.h */,
+				877534EB1DF8F82900754DC5 /* HFVirtualPropertiesController.m */,
+				877534ED1DF8F84100754DC5 /* VirtualProperties.storyboard */,
+			);
+			name = "虚拟属性";
+			sourceTree = "<group>";
+		};
+		877535991DFE35A600754DC5 /* 持续和重复 */ = {
+			isa = PBXGroup;
+			children = (
+				877535961DFAA94700754DC5 /* HFCAMediaTimingController.h */,
+				877535971DFAA94700754DC5 /* HFCAMediaTimingController.m */,
+				877535941DFAA91800754DC5 /* CAMediaTiming.storyboard */,
+			);
+			name = "持续和重复";
+			sourceTree = "<group>";
+		};
+		8775359A1DFE6DA900754DC5 /* 重复动画2 */ = {
+			isa = PBXGroup;
+			children = (
+				8775359B1DFE6E8A00754DC5 /* HFRepeatViewController.h */,
+				8775359C1DFE6E8A00754DC5 /* HFRepeatViewController.m */,
+				8775359E1DFE6EAC00754DC5 /* Repeat.storyboard */,
+			);
+			name = "重复动画2";
+			sourceTree = "<group>";
+		};
+		877535A01DFE804900754DC5 /* 相对时间 */ = {
+			isa = PBXGroup;
+			children = (
+				877535A11DFE8F1900754DC5 /* HFRelativeTimeController.h */,
+				877535A21DFE8F1900754DC5 /* HFRelativeTimeController.m */,
+				877535A41DFE8F5600754DC5 /* RelativeTime.storyboard */,
+			);
+			name = "相对时间";
+			sourceTree = "<group>";
+		};
+		877535A61DFFC0AF00754DC5 /* 手动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				877535A71DFFC10900754DC5 /* HFManualAnimationController.h */,
+				877535A81DFFC10900754DC5 /* HFManualAnimationController.m */,
+				877535AA1DFFC16400754DC5 /* ManualAnimation.storyboard */,
+			);
+			name = "手动动画";
+			sourceTree = "<group>";
+		};
+		877535B51DFFE07000754DC5 /* CAMediaTimingFunction */ = {
+			isa = PBXGroup;
+			children = (
+				877535B21DFFE06B00754DC5 /* HFCAMediaTimingFunctionController.h */,
+				877535B31DFFE06B00754DC5 /* HFCAMediaTimingFunctionController.m */,
+				87CF2D9E1DFFE1270094D96A /* CAMediaTimingFunction.storyboard */,
+			);
+			name = CAMediaTimingFunction;
+			sourceTree = "<group>";
+		};
+		8788A8801E026E17009F7A37 /* AHEasing */ = {
+			isa = PBXGroup;
+			children = (
+				8788A8811E026E17009F7A37 /* CAKeyframeAnimation+AHEasing.h */,
+				8788A8821E026E17009F7A37 /* CAKeyframeAnimation+AHEasing.m */,
+				8788A8831E026E17009F7A37 /* easing.c */,
+				8788A8841E026E17009F7A37 /* easing.h */,
+			);
+			path = AHEasing;
+			sourceTree = "<group>";
+		};
+		87A467B21E0282DC00F5BA1F /* 定时帧 */ = {
+			isa = PBXGroup;
+			children = (
+				87CD1F4E1E028EC000B60D06 /* HFTimeFrameAnimationController.h */,
+				87CD1F4F1E028EC000B60D06 /* HFTimeFrameAnimationController.m */,
+				87CD1F511E028EDC00B60D06 /* TimeFrameAnimation.storyboard */,
+			);
+			name = "定时帧";
+			sourceTree = "<group>";
+		};
+		87B882CD1DED529D00E20C4B /* CATextLyerView */ = {
+			isa = PBXGroup;
+			children = (
+				87D2A1F91DEC005500F239E1 /* HFLayerLabel.h */,
+				87D2A1FA1DEC005500F239E1 /* HFLayerLabel.m */,
+				87D2A1F41DE839AC00F239E1 /* HFCATextLyerViewController.h */,
+				87D2A1F51DE839AC00F239E1 /* HFCATextLyerViewController.m */,
+			);
+			name = CATextLyerView;
+			sourceTree = "<group>";
+		};
+		87B882CE1DED52C000E20C4B /* CATransformLayerView */ = {
+			isa = PBXGroup;
+			children = (
+				87B882CA1DEC265900E20C4B /* HFCATransformLayerController.h */,
+				87B882CB1DEC265900E20C4B /* HFCATransformLayerController.m */,
+			);
+			name = CATransformLayerView;
+			sourceTree = "<group>";
+		};
+		87B882CF1DED52E900E20C4B /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87B882D01DED533E00E20C4B /* HFCAGradientLayerController.h */,
+				87B882D11DED533E00E20C4B /* HFCAGradientLayerController.m */,
+			);
+			name = CAGradientLayer;
+			sourceTree = "<group>";
+		};
+		87B882D31DED66D600E20C4B /* CAReplicatorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87B882D41DED672500E20C4B /* HFCAReplicatorViewController.h */,
+				87B882D51DED672500E20C4B /* HFCAReplicatorViewController.m */,
+				87B882DA1DEE70FB00E20C4B /* ReflectionView.h */,
+				87B882DB1DEE70FB00E20C4B /* ReflectionView.m */,
+			);
+			name = CAReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		87B882DE1DEE9A9A00E20C4B /* CAEAGLLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87B883421DEFF00800E20C4B /* HFCAEAGLLayerController.h */,
+				87B883431DEFF00800E20C4B /* HFCAEAGLLayerController.m */,
+			);
+			name = CAEAGLLayer;
+			sourceTree = "<group>";
+		};
+		87B882DF1DEE9A9B00E20C4B /* CAEmitterLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87B8833F1DEEC9C900E20C4B /* HFCAEmitterLayerController.h */,
+				87B883401DEEC9C900E20C4B /* HFCAEmitterLayerController.m */,
+			);
+			name = CAEmitterLayer;
+			sourceTree = "<group>";
+		};
+		87B882E01DEE9A9C00E20C4B /* CATiledLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87B882E81DEEB7F900E20C4B /* HFCATiledLayerController.h */,
+				87B882E91DEEB7F900E20C4B /* HFCATiledLayerController.m */,
+			);
+			name = CATiledLayer;
+			sourceTree = "<group>";
+		};
+		87B882E11DEE9AA000E20C4B /* CAScrollLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87B882E51DEEA35000E20C4B /* HFScrollLayerController.h */,
+				87B882E61DEEA35000E20C4B /* HFScrollLayerController.m */,
+				87B882E21DEE9AE800E20C4B /* HFScrollView.h */,
+				87B882E31DEE9AE800E20C4B /* HFScrollView.m */,
+			);
+			name = CAScrollLayer;
+			sourceTree = "<group>";
+		};
+		87B883471DF01D7700E20C4B /* 基于定时器的动画 */ = {
+			isa = PBXGroup;
+			children = (
+				87CD1F4B1E02853800B60D06 /* HFBasedOnTimerTableViewController.h */,
+				87CD1F4C1E02853800B60D06 /* HFBasedOnTimerTableViewController.m */,
+				87A467B21E0282DC00F5BA1F /* 定时帧 */,
+				8747C0F61E03B6C8006FB72B /* 专业定时器的使用以及计算帧的持续时间 */,
+				8747C0F51E03B6C7006FB72B /* New Group3 */,
+				8747C0F41E03B6C5006FB72B /* New Group2 */,
+				8747C0F31E03B6C4006FB72B /* New Group1 */,
+				8747C0F21E03B6C3006FB72B /* New Group */,
+			);
+			name = "基于定时器的动画";
+			sourceTree = "<group>";
+		};
+		87B883491DF01D8500E20C4B /* 缓冲 */ = {
+			isa = PBXGroup;
+			children = (
+				877535AF1DFFDCC200754DC5 /* HFSpeedTableViewController.h */,
+				877535B01DFFDCC200754DC5 /* HFSpeedTableViewController.m */,
+				877535B51DFFE07000754DC5 /* CAMediaTimingFunction */,
+				87CF2DA01DFFE6820094D96A /* UIView动画缓冲 */,
+				87715D371DFFFE86005D1B94 /* 缓冲和关键帧动画 */,
+				87715D4A1E00E946005D1B94 /* 自定义缓冲函数--曲线上的点的检索和绘制 */,
+				87715D521E00E9D4005D1B94 /* 基于定时器的动画 */,
+				87715D511E00E9D3005D1B94 /* 基于关键帧的缓冲 */,
+				87715D501E00E9D2005D1B94 /* 使用插入值创建一个关键帧动画 */,
+				87715D4F1E00E9D1005D1B94 /* New Group1 */,
+				87715D4E1E00E9D0005D1B94 /* New Group */,
+			);
+			name = "缓冲";
+			sourceTree = "<group>";
+		};
+		87B8834A1DF01D8600E20C4B /* CAMediaTiming协议 */ = {
+			isa = PBXGroup;
+			children = (
+				877535991DFE35A600754DC5 /* 持续和重复 */,
+				8775359A1DFE6DA900754DC5 /* 重复动画2 */,
+				877535A01DFE804900754DC5 /* 相对时间 */,
+				877535A61DFFC0AF00754DC5 /* 手动动画 */,
+			);
+			name = "CAMediaTiming协议";
+			sourceTree = "<group>";
+		};
+		87B8834B1DF01D8700E20C4B /* 在动画过程中取消动画示例 */ = {
+			isa = PBXGroup;
+			children = (
+				8775358C1DFA987300754DC5 /* HFCancelAnimationController.h */,
+				8775358D1DFA987300754DC5 /* HFCancelAnimationController.m */,
+				8775358F1DFA988700754DC5 /* CancelAnimation.storyboard */,
+			);
+			name = "在动画过程中取消动画示例";
+			sourceTree = "<group>";
+		};
+		87B8834C1DF01D8900E20C4B /* 基本动画--动画打标签--时钟 */ = {
+			isa = PBXGroup;
+			children = (
+				877534D51DF7DB9F00754DC5 /* HFClockAniTagViewController.h */,
+				877534D61DF7DB9F00754DC5 /* HFClockAniTagViewController.m */,
+				877534D31DF7DB3600754DC5 /* Clock.storyboard */,
+			);
+			name = "基本动画--动画打标签--时钟";
+			sourceTree = "<group>";
+		};
+		87B8834D1DF01D8A00E20C4B /* 属性动画 */ = {
+			isa = PBXGroup;
+			children = (
+				877534D81DF7E9B600754DC5 /* 基本动画 */,
+				87B8834C1DF01D8900E20C4B /* 基本动画--动画打标签--时钟 */,
+				877534D91DF7EA2900754DC5 /* 关键帧动画 */,
+				877534E91DF8F79100754DC5 /* 虚拟属性 */,
+				877534E81DF8F79000754DC5 /* 动画组 */,
+				877534E71DF8F78F00754DC5 /* 过渡 */,
+				877534E61DF8F78E00754DC5 /* 图层树动画----参考iOSCoreAnimation2 */,
+				877534E51DF8F78D00754DC5 /* UIView的过渡动画 */,
+				877534E41DF8F78500754DC5 /* 自定义过渡效果 */,
+				87B8834B1DF01D8700E20C4B /* 在动画过程中取消动画示例 */,
+			);
+			name = "属性动画";
+			sourceTree = "<group>";
+		};
+		87B8834E1DF01D8F00E20C4B /* 呈现图层 */ = {
+			isa = PBXGroup;
+			children = (
+				87B883531DF559A800E20C4B /* HFPresentationLayerController.h */,
+				87B883541DF559A800E20C4B /* HFPresentationLayerController.m */,
+				87B883561DF559B500E20C4B /* Storyboard.storyboard */,
+			);
+			name = "呈现图层";
+			sourceTree = "<group>";
+		};
+		87B8834F1DF01D9100E20C4B /* 事务 */ = {
+			isa = PBXGroup;
+			children = (
+				87B883501DF1076200E20C4B /* HFtransactionController.h */,
+				87B883511DF1076200E20C4B /* HFtransactionController.m */,
+			);
+			name = "事务";
+			sourceTree = "<group>";
+		};
+		87CF2DA01DFFE6820094D96A /* UIView动画缓冲 */ = {
+			isa = PBXGroup;
+			children = (
+				87715D341DFFE836005D1B94 /* HFUIViewAnimationBufferController.h */,
+				87715D351DFFE836005D1B94 /* HFUIViewAnimationBufferController.m */,
+				87CF2DA41DFFE72F0094D96A /* AnimationBuffer.storyboard */,
+			);
+			name = "UIView动画缓冲";
+			sourceTree = "<group>";
+		};
+		87D2A1D31DE68FED00F239E1 /* 固体对象--立方体 */ = {
+			isa = PBXGroup;
+			children = (
+				87D2A1D41DE6934800F239E1 /* HFCubeViewController.h */,
+				87D2A1D51DE6934800F239E1 /* HFCubeViewController.m */,
+				87D2A1D71DE6938E00F239E1 /* cubeface1.xib */,
+			);
+			name = "固体对象--立方体";
+			sourceTree = "<group>";
+		};
+		87D2A1E91DE81EFB00F239E1 /* CAShapLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87D2A1EA1DE81F5500F239E1 /* HFCAShaperLayerViewController.h */,
+				87D2A1EB1DE81F5500F239E1 /* HFCAShaperLayerViewController.m */,
+			);
+			name = CAShapLayer;
+			sourceTree = "<group>";
+		};
+		87D2A1F31DE8396C00F239E1 /* 专属图层 */ = {
+			isa = PBXGroup;
+			children = (
+				87B882CD1DED529D00E20C4B /* CATextLyerView */,
+				87B882CE1DED52C000E20C4B /* CATransformLayerView */,
+				87B882CF1DED52E900E20C4B /* CAGradientLayer */,
+				87B882D31DED66D600E20C4B /* CAReplicatorLayer */,
+				87B882E11DEE9AA000E20C4B /* CAScrollLayer */,
+				87B882E01DEE9A9C00E20C4B /* CATiledLayer */,
+				87B882DF1DEE9A9B00E20C4B /* CAEmitterLayer */,
+				87B882DE1DEE9A9A00E20C4B /* CAEAGLLayer */,
+			);
+			name = "专属图层";
+			sourceTree = "<group>";
+		};
+		87FDF5A41DDED2C800808F33 /* StitchingLayer */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF491DDD7F34008454B0 /* ViewController.h */,
+				87FEAF4A1DDD7F34008454B0 /* ViewController.m */,
+			);
+			name = StitchingLayer;
+			sourceTree = "<group>";
+		};
+		87FDF5A51DDED30400808F33 /* LayerResponse */ = {
+			isa = PBXGroup;
+			children = (
+				87FDF5AB1DDED3A600808F33 /* HFLayerResponseViewController.h */,
+				87FDF5AC1DDED3A600808F33 /* HFLayerResponseViewController.m */,
+			);
+			name = LayerResponse;
+			sourceTree = "<group>";
+		};
+		87FDF5A61DDED37200808F33 /* 仿射 */ = {
+			isa = PBXGroup;
+			children = (
+				87FDF6081DE4426500808F33 /* HFAffineViewController.h */,
+				87FDF6091DE4426500808F33 /* HFAffineViewController.m */,
+			);
+			name = "仿射";
+			sourceTree = "<group>";
+		};
+		87FDF5A71DDED37400808F33 /* 栅格化的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				87FDF6051DE42E8100808F33 /* HFRasterizeViewController.h */,
+				87FDF6061DE42E8100808F33 /* HFRasterizeViewController.m */,
+			);
+			name = "栅格化的使用";
+			sourceTree = "<group>";
+		};
+		87FDF5A81DDED37500808F33 /* 闹钟--最近过滤的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				87FDF5F81DE2CA4B00808F33 /* HFClockViewController.h */,
+				87FDF5F91DE2CA4B00808F33 /* HFClockViewController.m */,
+			);
+			name = "闹钟--最近过滤的使用";
+			sourceTree = "<group>";
+		};
+		87FDF5AA1DDED38700808F33 /* LayerShadow */ = {
+			isa = PBXGroup;
+			children = (
+				87FDF5F51DE2842600808F33 /* HFLayerShadowViewController.h */,
+				87FDF5F61DE2842600808F33 /* HFLayerShadowViewController.m */,
+			);
+			name = LayerShadow;
+			sourceTree = "<group>";
+		};
+		87FDF68E1DE579EE00808F33 /* 3D仿射 */ = {
+			isa = PBXGroup;
+			children = (
+				87FDF68F1DE57A1F00808F33 /* HF3DAFFineViewController.h */,
+				87FDF6901DE57A1F00808F33 /* HF3DAFFineViewController.m */,
+			);
+			name = "3D仿射";
+			sourceTree = "<group>";
+		};
+		87FEAF371DDD7F34008454B0 = {
+			isa = PBXGroup;
+			children = (
+				87FEAF421DDD7F34008454B0 /* iOS Core Animation */,
+				87FEAF5C1DDD7F34008454B0 /* iOS Core AnimationTests */,
+				87FEAF671DDD7F34008454B0 /* iOS Core AnimationUITests */,
+				87FEAF411DDD7F34008454B0 /* Products */,
+				87FEAF761DDD806B008454B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		87FEAF411DDD7F34008454B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF401DDD7F34008454B0 /* iOS Core Animation.app */,
+				87FEAF591DDD7F34008454B0 /* iOS Core AnimationTests.xctest */,
+				87FEAF641DDD7F34008454B0 /* iOS Core AnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87FEAF421DDD7F34008454B0 /* iOS Core Animation */ = {
+			isa = PBXGroup;
+			children = (
+				87715D3E1E00CFFF005D1B94 /* Comman */,
+				87FEAFD01DDED184008454B0 /* Other */,
+				87FEAFCF1DDED169008454B0 /* Appdelegate */,
+				87FEAF7C1DDDAB6A008454B0 /* Class */,
+				87B8834F1DF01D9100E20C4B /* 事务 */,
+				87B8834E1DF01D8F00E20C4B /* 呈现图层 */,
+				87B8834D1DF01D8A00E20C4B /* 属性动画 */,
+				87B8834A1DF01D8600E20C4B /* CAMediaTiming协议 */,
+				87B883491DF01D8500E20C4B /* 缓冲 */,
+				87B883471DF01D7700E20C4B /* 基于定时器的动画 */,
+				872925BA1DF6B68A005CC5A8 /* Images.xcassets */,
+				87FEAF431DDD7F34008454B0 /* Supporting Files */,
+			);
+			path = "iOS Core Animation";
+			sourceTree = "<group>";
+		};
+		87FEAF431DDD7F34008454B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF441DDD7F34008454B0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87FEAF5C1DDD7F34008454B0 /* iOS Core AnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF5D1DDD7F34008454B0 /* iOS_Core_AnimationTests.m */,
+				87FEAF5F1DDD7F34008454B0 /* Info.plist */,
+			);
+			path = "iOS Core AnimationTests";
+			sourceTree = "<group>";
+		};
+		87FEAF671DDD7F34008454B0 /* iOS Core AnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF681DDD7F34008454B0 /* iOS_Core_AnimationUITests.m */,
+				87FEAF6A1DDD7F34008454B0 /* Info.plist */,
+			);
+			path = "iOS Core AnimationUITests";
+			sourceTree = "<group>";
+		};
+		87FEAF761DDD806B008454B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B883451DEFF21500E20C4B /* OpenGLES.framework */,
+				87D2A1F71DE8442A00F239E1 /* CoreText.framework */,
+				87D2A1E71DE7EB4200F239E1 /* GLKit.framework */,
+				87FEAF771DDD806B008454B0 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87FEAF7C1DDDAB6A008454B0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				87FDF5A41DDED2C800808F33 /* StitchingLayer */,
+				87FEAF7D1DDDAB85008454B0 /* LayerDelegate */,
+				87FDF5A51DDED30400808F33 /* LayerResponse */,
+				87FDF5AA1DDED38700808F33 /* LayerShadow */,
+				87FDF5A81DDED37500808F33 /* 闹钟--最近过滤的使用 */,
+				87FDF5A71DDED37400808F33 /* 栅格化的使用 */,
+				87FDF5A61DDED37200808F33 /* 仿射 */,
+				87FDF68E1DE579EE00808F33 /* 3D仿射 */,
+				87D2A1D31DE68FED00F239E1 /* 固体对象--立方体 */,
+				87D2A1F31DE8396C00F239E1 /* 专属图层 */,
+				87D2A1E91DE81EFB00F239E1 /* CAShapLayer */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		87FEAF7D1DDDAB85008454B0 /* LayerDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF791DDDA8CC008454B0 /* HFCalayerDelegateController.h */,
+				87FEAF7A1DDDA8CC008454B0 /* HFCalayerDelegateController.m */,
+			);
+			name = LayerDelegate;
+			sourceTree = "<group>";
+		};
+		87FEAFCF1DDED169008454B0 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF461DDD7F34008454B0 /* AppDelegate.h */,
+				87FEAF471DDD7F34008454B0 /* AppDelegate.m */,
+			);
+			name = Appdelegate;
+			sourceTree = "<group>";
+		};
+		87FEAFD01DDED184008454B0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				87FEAF4C1DDD7F34008454B0 /* Main.storyboard */,
+				8718753D1DF6516000E5A9EF /* HFTableViewController.h */,
+				8718753E1DF6516000E5A9EF /* HFTableViewController.m */,
+				87FEAF4F1DDD7F34008454B0 /* Assets.xcassets */,
+				87FEAF511DDD7F34008454B0 /* LaunchScreen.storyboard */,
+				87FEAF541DDD7F34008454B0 /* Info.plist */,
+				872925B41DF68F3A005CC5A8 /* Command.pch */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87FEAF3F1DDD7F34008454B0 /* iOS Core Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FEAF6D1DDD7F34008454B0 /* Build configuration list for PBXNativeTarget "iOS Core Animation" */;
+			buildPhases = (
+				87FEAF3C1DDD7F34008454B0 /* Sources */,
+				87FEAF3D1DDD7F34008454B0 /* Frameworks */,
+				87FEAF3E1DDD7F34008454B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Core Animation";
+			productName = "iOS Core Animation";
+			productReference = 87FEAF401DDD7F34008454B0 /* iOS Core Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87FEAF581DDD7F34008454B0 /* iOS Core AnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FEAF701DDD7F34008454B0 /* Build configuration list for PBXNativeTarget "iOS Core AnimationTests" */;
+			buildPhases = (
+				87FEAF551DDD7F34008454B0 /* Sources */,
+				87FEAF561DDD7F34008454B0 /* Frameworks */,
+				87FEAF571DDD7F34008454B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87FEAF5B1DDD7F34008454B0 /* PBXTargetDependency */,
+			);
+			name = "iOS Core AnimationTests";
+			productName = "iOS Core AnimationTests";
+			productReference = 87FEAF591DDD7F34008454B0 /* iOS Core AnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87FEAF631DDD7F34008454B0 /* iOS Core AnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FEAF731DDD7F34008454B0 /* Build configuration list for PBXNativeTarget "iOS Core AnimationUITests" */;
+			buildPhases = (
+				87FEAF601DDD7F34008454B0 /* Sources */,
+				87FEAF611DDD7F34008454B0 /* Frameworks */,
+				87FEAF621DDD7F34008454B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87FEAF661DDD7F34008454B0 /* PBXTargetDependency */,
+			);
+			name = "iOS Core AnimationUITests";
+			productName = "iOS Core AnimationUITests";
+			productReference = 87FEAF641DDD7F34008454B0 /* iOS Core AnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87FEAF381DDD7F34008454B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = dahuangfeng;
+				TargetAttributes = {
+					87FEAF3F1DDD7F34008454B0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y999T5K586;
+						ProvisioningStyle = Automatic;
+					};
+					87FEAF581DDD7F34008454B0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y999T5K586;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87FEAF3F1DDD7F34008454B0;
+					};
+					87FEAF631DDD7F34008454B0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y999T5K586;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87FEAF3F1DDD7F34008454B0;
+					};
+				};
+			};
+			buildConfigurationList = 87FEAF3B1DDD7F34008454B0 /* Build configuration list for PBXProject "iOS Core Animation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87FEAF371DDD7F34008454B0;
+			productRefGroup = 87FEAF411DDD7F34008454B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87FEAF3F1DDD7F34008454B0 /* iOS Core Animation */,
+				87FEAF581DDD7F34008454B0 /* iOS Core AnimationTests */,
+				87FEAF631DDD7F34008454B0 /* iOS Core AnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87FEAF3E1DDD7F34008454B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8775359F1DFE6EAC00754DC5 /* Repeat.storyboard in Resources */,
+				8788A87F1E02418F009F7A37 /* InsertValueController.storyboard in Resources */,
+				8788A87A1E0145C0009F7A37 /* KeyframeAnimationBuffer.storyboard in Resources */,
+				87FEAF531DDD7F34008454B0 /* LaunchScreen.storyboard in Resources */,
+				87CF2D9F1DFFE1270094D96A /* CAMediaTimingFunction.storyboard in Resources */,
+				87715D491E00D141005D1B94 /* BufferKeyFrameAnimation.storyboard in Resources */,
+				87D2A1D81DE6938E00F239E1 /* cubeface1.xib in Resources */,
+				872925BB1DF6B68A005CC5A8 /* Images.xcassets in Resources */,
+				877535AB1DFFC16400754DC5 /* ManualAnimation.storyboard in Resources */,
+				877534D41DF7DB3600754DC5 /* Clock.storyboard in Resources */,
+				877534EE1DF8F84100754DC5 /* VirtualProperties.storyboard in Resources */,
+				87FEAF501DDD7F34008454B0 /* Assets.xcassets in Resources */,
+				87715D541E00EA20005D1B94 /* RetrievePoint.storyboard in Resources */,
+				877534F81DF943BC00754DC5 /* Transition.storyboard in Resources */,
+				877535951DFAA91800754DC5 /* CAMediaTiming.storyboard in Resources */,
+				8747C0FB1E03B794006FB72B /* CalculateDurationOfFrame.storyboard in Resources */,
+				87CF2DA51DFFE72F0094D96A /* AnimationBuffer.storyboard in Resources */,
+				877535901DFA988700754DC5 /* CancelAnimation.storyboard in Resources */,
+				872925B91DF6AA4D005CC5A8 /* Attribute.storyboard in Resources */,
+				87CD1F521E028EDC00B60D06 /* TimeFrameAnimation.storyboard in Resources */,
+				8775358B1DFA4FB500754DC5 /* CustomTransition.storyboard in Resources */,
+				877534FA1DF9571100754DC5 /*  layerTreeAnimation.storyboard in Resources */,
+				877534E01DF8052100754DC5 /* keyFrameAnimationCGPath.storyboard in Resources */,
+				877534DE1DF7EB8B00754DC5 /* keyFrameAnimation.storyboard in Resources */,
+				877534F31DF90BF000754DC5 /* groupAnimation.storyboard in Resources */,
+				877535861DFA39C800754DC5 /* HFUIViewTransitionController.storyboard in Resources */,
+				877535A51DFE8F5600754DC5 /* RelativeTime.storyboard in Resources */,
+				87FEAF4E1DDD7F34008454B0 /* Main.storyboard in Resources */,
+				87B883571DF559B500E20C4B /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FEAF571DDD7F34008454B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FEAF621DDD7F34008454B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87FEAF3C1DDD7F34008454B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877535B11DFFDCC200754DC5 /* HFSpeedTableViewController.m in Sources */,
+				87B882EA1DEEB7F900E20C4B /* HFCATiledLayerController.m in Sources */,
+				87FDF5F71DE2842600808F33 /* HFLayerShadowViewController.m in Sources */,
+				877535981DFAA94700754DC5 /* HFCAMediaTimingController.m in Sources */,
+				87FDF5FA1DE2CA4B00808F33 /* HFClockViewController.m in Sources */,
+				877535A31DFE8F1900754DC5 /* HFRelativeTimeController.m in Sources */,
+				8788A8781E01439B009F7A37 /* HFKeyframeAnimationBufferController.m in Sources */,
+				877534FD1DF9573E00754DC5 /* HFLayerTreeController.m in Sources */,
+				87715D361DFFE836005D1B94 /* HFUIViewAnimationBufferController.m in Sources */,
+				87FEAF4B1DDD7F34008454B0 /* ViewController.m in Sources */,
+				87D2A1EC1DE81F5500F239E1 /* HFCAShaperLayerViewController.m in Sources */,
+				87CD1F4D1E02853800B60D06 /* HFBasedOnTimerTableViewController.m in Sources */,
+				8718753F1DF6516000E5A9EF /* HFTableViewController.m in Sources */,
+				877535B41DFFE06B00754DC5 /* HFCAMediaTimingFunctionController.m in Sources */,
+				87FEAF481DDD7F34008454B0 /* AppDelegate.m in Sources */,
+				8775359D1DFE6E8A00754DC5 /* HFRepeatViewController.m in Sources */,
+				87B882CC1DEC265900E20C4B /* HFCATransformLayerController.m in Sources */,
+				87FDF6911DE57A1F00808F33 /* HF3DAFFineViewController.m in Sources */,
+				877534D71DF7DB9F00754DC5 /* HFClockAniTagViewController.m in Sources */,
+				877535841DF9672600754DC5 /* HFUIViewTransitionController.m in Sources */,
+				87FDF6071DE42E8100808F33 /* HFRasterizeViewController.m in Sources */,
+				87FDF5AD1DDED3A600808F33 /* HFLayerResponseViewController.m in Sources */,
+				877534F61DF943A000754DC5 /* HFTransitionController.m in Sources */,
+				87B882D21DED533E00E20C4B /* HFCAGradientLayerController.m in Sources */,
+				87B882E71DEEA35000E20C4B /* HFScrollLayerController.m in Sources */,
+				87D2A1FB1DEC005500F239E1 /* HFLayerLabel.m in Sources */,
+				872925B71DF6AA1E005CC5A8 /* HFAttributeControllerViewController.m in Sources */,
+				87715D4D1E00E9C7005D1B94 /* HFRetrieveController.m in Sources */,
+				87CD1F501E028EC000B60D06 /* HFTimeFrameAnimationController.m in Sources */,
+				87B882E41DEE9AE800E20C4B /* HFScrollView.m in Sources */,
+				8788A8861E026E17009F7A37 /* easing.c in Sources */,
+				87B882DC1DEE70FB00E20C4B /* ReflectionView.m in Sources */,
+				8747C0F91E03B75F006FB72B /* HFCalculateDurationOfTheFrameController.m in Sources */,
+				87D2A1F61DE839AC00F239E1 /* HFCATextLyerViewController.m in Sources */,
+				87B883411DEEC9C900E20C4B /* HFCAEmitterLayerController.m in Sources */,
+				877534EC1DF8F82900754DC5 /* HFVirtualPropertiesController.m in Sources */,
+				87B883551DF559A800E20C4B /* HFPresentationLayerController.m in Sources */,
+				877534F11DF90BDD00754DC5 /* HFGroupAnimationController.m in Sources */,
+				8788A87D1E024176009F7A37 /* HFInsertValueController.m in Sources */,
+				877535001DF95E5200754DC5 /* HFChildViewController.m in Sources */,
+				87B883441DEFF00800E20C4B /* HFCAEAGLLayerController.m in Sources */,
+				8775358E1DFA987300754DC5 /* HFCancelAnimationController.m in Sources */,
+				877535A91DFFC10900754DC5 /* HFManualAnimationController.m in Sources */,
+				877534DC1DF7EA6700754DC5 /* HFKeyframeAnimationController.m in Sources */,
+				87FDF60A1DE4426500808F33 /* HFAffineViewController.m in Sources */,
+				87B882D61DED672500E20C4B /* HFCAReplicatorViewController.m in Sources */,
+				8788A8851E026E17009F7A37 /* CAKeyframeAnimation+AHEasing.m in Sources */,
+				87B883521DF1076200E20C4B /* HFtransactionController.m in Sources */,
+				87715D3D1E00CFE8005D1B94 /* HFBasicViewController.m in Sources */,
+				87FEAF7B1DDDA8CC008454B0 /* HFCalayerDelegateController.m in Sources */,
+				87FEAF451DDD7F34008454B0 /* main.m in Sources */,
+				87D2A1D61DE6934800F239E1 /* HFCubeViewController.m in Sources */,
+				87715D471E00D12D005D1B94 /* HFBufferKeyFrameAnimationController.m in Sources */,
+				877534E31DF8054900754DC5 /* HFkeyFrameAnimationCGPathController.m in Sources */,
+				877535891DFA4FA000754DC5 /* HFCustomTransitionController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FEAF551DDD7F34008454B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FEAF5E1DDD7F34008454B0 /* iOS_Core_AnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FEAF601DDD7F34008454B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FEAF691DDD7F34008454B0 /* iOS_Core_AnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87FEAF5B1DDD7F34008454B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87FEAF3F1DDD7F34008454B0 /* iOS Core Animation */;
+			targetProxy = 87FEAF5A1DDD7F34008454B0 /* PBXContainerItemProxy */;
+		};
+		87FEAF661DDD7F34008454B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87FEAF3F1DDD7F34008454B0 /* iOS Core Animation */;
+			targetProxy = 87FEAF651DDD7F34008454B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87FEAF4C1DDD7F34008454B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87FEAF4D1DDD7F34008454B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87FEAF511DDD7F34008454B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87FEAF521DDD7F34008454B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87FEAF6B1DDD7F34008454B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87FEAF6C1DDD7F34008454B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87FEAF6E1DDD7F34008454B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = Y999T5K586;
+				GCC_PREFIX_HEADER = "iOS Core Animation/Command.pch";
+				INFOPLIST_FILE = "iOS Core Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.iOS-Core-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87FEAF6F1DDD7F34008454B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = Y999T5K586;
+				GCC_PREFIX_HEADER = "iOS Core Animation/Command.pch";
+				INFOPLIST_FILE = "iOS Core Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.iOS-Core-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87FEAF711DDD7F34008454B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y999T5K586;
+				INFOPLIST_FILE = "iOS Core AnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.iOS-Core-AnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Core Animation.app/iOS Core Animation";
+			};
+			name = Debug;
+		};
+		87FEAF721DDD7F34008454B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y999T5K586;
+				INFOPLIST_FILE = "iOS Core AnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.iOS-Core-AnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Core Animation.app/iOS Core Animation";
+			};
+			name = Release;
+		};
+		87FEAF741DDD7F34008454B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y999T5K586;
+				INFOPLIST_FILE = "iOS Core AnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.iOS-Core-AnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS Core Animation";
+			};
+			name = Debug;
+		};
+		87FEAF751DDD7F34008454B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y999T5K586;
+				INFOPLIST_FILE = "iOS Core AnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.iOS-Core-AnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS Core Animation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87FEAF3B1DDD7F34008454B0 /* Build configuration list for PBXProject "iOS Core Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FEAF6B1DDD7F34008454B0 /* Debug */,
+				87FEAF6C1DDD7F34008454B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87FEAF6D1DDD7F34008454B0 /* Build configuration list for PBXNativeTarget "iOS Core Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FEAF6E1DDD7F34008454B0 /* Debug */,
+				87FEAF6F1DDD7F34008454B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87FEAF701DDD7F34008454B0 /* Build configuration list for PBXNativeTarget "iOS Core AnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FEAF711DDD7F34008454B0 /* Debug */,
+				87FEAF721DDD7F34008454B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87FEAF731DDD7F34008454B0 /* Build configuration list for PBXNativeTarget "iOS Core AnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FEAF741DDD7F34008454B0 /* Debug */,
+				87FEAF751DDD7F34008454B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87FEAF381DDD7F34008454B0 /* Project object */;
+}

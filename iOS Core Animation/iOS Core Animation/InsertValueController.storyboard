@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Insert Value Controller-->
+        <scene sceneID="4c3-UH-KFe">
+            <objects>
+                <viewController storyboardIdentifier="HFInsertValueController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z4e-BS-9oO" customClass="HFInsertValueController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1fI-4j-ghs"/>
+                        <viewControllerLayoutGuide type="bottom" id="9xa-US-IfA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wpE-LQ-JtS">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwB-aA-cho">
+                                <rect key="frame" x="0.0" y="20" width="667" height="355"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9xa-US-IfA" firstAttribute="top" secondItem="ZwB-aA-cho" secondAttribute="bottom" id="3TA-sp-Bvw"/>
+                            <constraint firstAttribute="trailing" secondItem="ZwB-aA-cho" secondAttribute="trailing" id="5Pr-gc-ro9"/>
+                            <constraint firstItem="ZwB-aA-cho" firstAttribute="leading" secondItem="wpE-LQ-JtS" secondAttribute="leading" id="B3F-H8-5dt"/>
+                            <constraint firstItem="ZwB-aA-cho" firstAttribute="top" secondItem="1fI-4j-ghs" secondAttribute="bottom" id="jSh-Fx-Kxo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="ZwB-aA-cho" id="sdW-N2-UEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z37-1O-G2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="57"/>
+        </scene>
+    </scenes>
+</document>

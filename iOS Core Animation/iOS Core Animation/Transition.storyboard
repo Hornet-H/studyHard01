@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transition Controller-->
+        <scene sceneID="1C5-0s-lKW">
+            <objects>
+                <viewController storyboardIdentifier="HFTransitionController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gEN-bR-RxK" customClass="HFTransitionController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rvG-Nm-JHG"/>
+                        <viewControllerLayoutGuide type="bottom" id="72v-AB-axU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jvk-aG-Lza">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001" translatesAutoresizingMaskIntoConstraints="NO" id="gds-vH-R4W">
+                                <rect key="frame" x="67" y="77" width="532" height="220"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wps-05-nVc">
+                                <rect key="frame" x="273" y="325" width="120" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="switch">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchBtnClick:" destination="gEN-bR-RxK" eventType="touchUpInside" id="nDr-cL-Y6C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wps-05-nVc" secondAttribute="trailing" constant="274" id="CLX-kZ-vz5"/>
+                            <constraint firstItem="Wps-05-nVc" firstAttribute="top" secondItem="gds-vH-R4W" secondAttribute="bottom" constant="28" id="Fwo-bq-SjS"/>
+                            <constraint firstItem="Wps-05-nVc" firstAttribute="leading" secondItem="jvk-aG-Lza" secondAttribute="leading" constant="273" id="HA1-4T-oFq"/>
+                            <constraint firstItem="72v-AB-axU" firstAttribute="top" secondItem="Wps-05-nVc" secondAttribute="bottom" constant="20" id="aL0-nt-5hL"/>
+                            <constraint firstAttribute="trailing" secondItem="gds-vH-R4W" secondAttribute="trailing" constant="68" id="hq8-Bh-jjd"/>
+                            <constraint firstItem="gds-vH-R4W" firstAttribute="top" secondItem="rvG-Nm-JHG" secondAttribute="bottom" constant="57" id="hy9-9N-xKp"/>
+                            <constraint firstItem="gds-vH-R4W" firstAttribute="leading" secondItem="jvk-aG-Lza" secondAttribute="leading" constant="67" id="st4-jf-m6X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gds-vH-R4W" id="Hcg-Gf-raJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Omw-b2-I1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.125937031484263" y="-48.799999999999997"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="001" width="293" height="220"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Buffer Key Frame Animation Controller-->
+        <scene sceneID="CIv-Yb-lJl">
+            <objects>
+                <viewController storyboardIdentifier="HFBufferKeyFrameAnimationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aEi-4t-qG5" customClass="HFBufferKeyFrameAnimationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GYa-ci-9Ce"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgO-Tn-GEr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d5c-iE-gDW">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-K1-5Bv">
+                                <rect key="frame" x="0.0" y="20" width="667" height="355"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-19-AE8">
+                                        <rect key="frame" x="248" y="282" width="170" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="changeColor">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changColorBtnClick:" destination="aEi-4t-qG5" eventType="touchUpInside" id="Qp7-ds-DUB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7QT-K1-5Bv" secondAttribute="trailing" id="LrB-KJ-gcC"/>
+                            <constraint firstItem="7QT-K1-5Bv" firstAttribute="top" secondItem="GYa-ci-9Ce" secondAttribute="bottom" id="T66-EY-YpK"/>
+                            <constraint firstItem="vgO-Tn-GEr" firstAttribute="top" secondItem="7QT-K1-5Bv" secondAttribute="bottom" id="qYU-kc-aNg"/>
+                            <constraint firstItem="7QT-K1-5Bv" firstAttribute="leading" secondItem="d5c-iE-gDW" secondAttribute="leading" id="zx8-RN-QPN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="layerView" destination="7QT-K1-5Bv" id="GJl-tS-z8R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q42-yx-MRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211.84407796101951" y="64.799999999999997"/>
+        </scene>
+    </scenes>
+</document>

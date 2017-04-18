@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clock Ani Tag View Controller-->
+        <scene sceneID="X90-9K-ZNx">
+            <objects>
+                <viewController storyboardIdentifier="HFClockAniTagViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ic6-mc-sV5" customClass="HFClockAniTagViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QCv-T8-h7x"/>
+                        <viewControllerLayoutGuide type="bottom" id="ygD-CW-cTT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Vi-oo-BjX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="55adfb3494571" translatesAutoresizingMaskIntoConstraints="NO" id="lr0-xT-YOo">
+                                <rect key="frame" x="69" y="215" width="237" height="237"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="时针" translatesAutoresizingMaskIntoConstraints="NO" id="5e4-lK-XDx">
+                                <rect key="frame" x="175" y="277" width="24" height="112"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="时针" translatesAutoresizingMaskIntoConstraints="NO" id="Qsm-7A-tpZ">
+                                <rect key="frame" x="175" y="277" width="24" height="112"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="时针" translatesAutoresizingMaskIntoConstraints="NO" id="voV-AB-4Ei">
+                                <rect key="frame" x="175" y="277" width="24" height="112"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="hourHand" destination="5e4-lK-XDx" id="lSR-To-lT5"/>
+                        <outlet property="minuteHand" destination="voV-AB-4Ei" id="HCf-83-kt3"/>
+                        <outlet property="secondHand" destination="Qsm-7A-tpZ" id="xV0-WW-Dup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4db-Jn-pUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269.60000000000002" y="187.55622188905548"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="55adfb3494571" width="238" height="238"/>
+        <image name="时针" width="24" height="222"/>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+//
+//  Command.pch
+//  iOS Core Animation
+//
+//  Created by 黄来峰 on 2016/12/6.
+//  Copyright © 2016年 dahuangfeng. All rights reserved.
+//
+
+#ifndef Command_pch
+#define Command_pch
+
+//用于调试
+#define randomColor [UIColor colorWithRed:arc4random_uniform(255.0)/255.0 green:arc4random_uniform(255.0)/255.0 blue:arc4random_uniform(255.0)/255.0 alpha:1.0]
+
+#endif /* Command_pch */
