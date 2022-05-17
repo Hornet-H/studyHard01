@@ -32,10 +32,7 @@
 <h1>ceshi</h1>
 <h1>ceshi02</h1>
 <script>
-    alert('1241241')
-    window.onerror = function(err) {
-        log('window.onerror: ' + err)
-    }
+   
 
     function setupWKWebViewJavascriptBridge(callback) {
         if (window.parent.WKWebViewJavascriptBridge) { return callback(WKWebViewJavascriptBridge); }
@@ -46,6 +43,10 @@
 
     window.onload = function (){
         debugger
+         alert('1241241')
+      window.onerror = function(err) {
+        log('window.onerror: ' + err)
+      }
         setupWKWebViewJavascriptBridge(function(bridge) {
             var uniqueId = 1
             function log(message, data, type) {
