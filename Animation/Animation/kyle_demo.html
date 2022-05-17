@@ -29,6 +29,7 @@
     </style>
 </head><body>
 <h1>Demo</h1>
+<h1>ceshi</h1>
 <script>
     window.onerror = function(err) {
         log('window.onerror: ' + err)
@@ -43,7 +44,7 @@
 
 
 
-    function onloadFunction (){
+    window.onloadFunction = onloadFunction (){
         setupWKWebViewJavascriptBridge(function(bridge) {
             var uniqueId = 1
             function log(message, data, type) {
