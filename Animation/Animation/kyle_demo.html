@@ -29,7 +29,6 @@
     </style>
 </head><body>
 <h1>Demo</h1>
-<!--    <img src="https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF"/>-->
 <script>
     window.onerror = function(err) {
         log('window.onerror: ' + err)
@@ -42,7 +41,9 @@
         window.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(null)
     }
 
-   window.onload = function (){
+
+
+    function onloadFunction (){
         setupWKWebViewJavascriptBridge(function(bridge) {
             var uniqueId = 1
             function log(message, data, type) {
@@ -103,14 +104,12 @@
 
         })
     }
+
 </script>
 <div class="content">
     <div id='getClientToken'></div>
     <div id='removeClientToken'></div>
 </div>
 <div class='custombutton' id='close'></div>
-<div style="background: #2EA721;display: flex;width: auto;height: auto">
-  
-</div>
-<div id='log'></div>
+
 </body></html>
