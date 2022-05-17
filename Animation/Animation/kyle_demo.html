@@ -36,14 +36,14 @@
     }
 
     function setupWKWebViewJavascriptBridge(callback) {
-        if (window.WKWebViewJavascriptBridge) { return callback(WKWebViewJavascriptBridge); }
-        if (window.WKWVJBCallbacks) { return window.WKWVJBCallbacks.push(callback); }
-        window.WKWVJBCallbacks = [callback];
-        window.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(null)
+        if (window.parent.WKWebViewJavascriptBridge) { return callback(WKWebViewJavascriptBridge); }
+        if (window.parent.WKWVJBCallbacks) { return window.parent.WKWVJBCallbacks.push(callback); }
+        window.parent.WKWVJBCallbacks = [callback];
+        window.parent.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(null)
     }
 
-window.onload = function (){
-          debugger
+    window.onload = function (){
+        debugger
         setupWKWebViewJavascriptBridge(function(bridge) {
             var uniqueId = 1
             function log(message, data, type) {
@@ -103,8 +103,8 @@ window.onload = function (){
             }
 
         })
-}
-   
+    }
+
 
 </script>
 <div class="content">
@@ -112,6 +112,4 @@ window.onload = function (){
     <div id='removeClientToken'></div>
 </div>
 <div class='custombutton' id='close'></div>
-<!-- <div style="background: #2EA721;display: flex;width: auto;height: auto"><iframe id="approvalFrame" src="www.baidu.com"/></div>
-<div id='log'></div> -->
 </body></html>
