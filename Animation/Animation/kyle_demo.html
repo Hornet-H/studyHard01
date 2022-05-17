@@ -43,65 +43,67 @@
         window.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(null)
     }
 
-    setupWKWebViewJavascriptBridge(function(bridge) {
-        var uniqueId = 1
-        function log(message, data, type) {
-            var log = document.getElementById('log')
-            var el = document.createElement('div')
-            el.className = type == 'native' ? 'logLine_Native' : 'logLine_JS'
-            el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
-            // if (log.children.length) { log.insertBefore(el, log.children[0]) }
-            if (log.children.length) { log.appendChild(el) }
-            else { log.appendChild(el) }
-        }
+   window.onload = function (){
+        setupWKWebViewJavascriptBridge(function(bridge) {
+            var uniqueId = 1
+            function log(message, data, type) {
+                var log = document.getElementById('log')
+                var el = document.createElement('div')
+                el.className = type == 'native' ? 'logLine_Native' : 'logLine_JS'
+                el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+                // if (log.children.length) { log.insertBefore(el, log.children[0]) }
+                if (log.children.length) { log.appendChild(el) }
+                else { log.appendChild(el) }
+            }
 
-        bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
-            log('iOS called testJavascriptHandler with', data, 'native')
-            var responseData = { 'Javascript Says':'Right back atcha!' }
-            log('JS responding with', responseData, 'native')
-            responseCallback(responseData)
+            bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+                log('iOS called testJavascriptHandler with', data, 'native')
+                var responseData = { 'Javascript Says':'Right back atcha!' }
+                log('JS responding with', responseData, 'native')
+                responseCallback(responseData)
+            })
+
+            document.body.appendChild(document.createElement('br'))
+            var getClientToken = document.getElementById('getClientToken').appendChild(document.createElement('button'))
+            getClientToken.innerHTML = 'getClientToken'
+            getClientToken.onclick = function(e) {
+                // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
+                e.preventDefault()
+                let parms = {'foo': 'bar'}
+                log('JS -> Native: action: getClientToken',parms,'logLine_JS')
+                bridge.callHandler('getClientToken', parms, function(response) {
+                    log('JS got response', response, 'js')
+                })
+            }
+
+            var removeClientToken = document.getElementById('removeClientToken').appendChild(document.createElement('button'))
+            removeClientToken.class = 'custombutton'
+            removeClientToken.innerHTML = 'removeClientToken'
+            removeClientToken.onclick = function(e) {
+                // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
+                e.preventDefault()
+                let parms = {'foo': 'bar'}
+                log('JS -> Native: action: removeClientToken',parms,'logLine_JS')
+                bridge.callHandler('removeClientToken', parms, function(response) {
+                    log('JS remove client token response', response, 'js')
+                })
+            }
+
+            var closeElement = document.getElementById('close').appendChild(document.createElement('button'))
+            closeElement.class = 'custombutton'
+            closeElement.innerHTML = 'closePage'
+            closeElement.onclick = function(e) {
+                // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
+                e.preventDefault()
+                let parms = {'foo': 'bar'}
+                log('JS -> Native: action: closePage',parms,'logLine_JS')
+                bridge.callHandler('closePage', parms, function(response) {
+                    log('JS remove client token response', response, 'js')
+                })
+            }
+
         })
-
-        document.body.appendChild(document.createElement('br'))
-        var getClientToken = document.getElementById('getClientToken').appendChild(document.createElement('button'))
-        getClientToken.innerHTML = 'getClientToken'
-        getClientToken.onclick = function(e) {
-            // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
-            e.preventDefault()
-            let parms = {'foo': 'bar'}
-            log('JS -> Native: action: getClientToken',parms,'logLine_JS')
-            bridge.callHandler('getClientToken', parms, function(response) {
-                log('JS got response', response, 'js')
-            })
-        }
-
-        var removeClientToken = document.getElementById('removeClientToken').appendChild(document.createElement('button'))
-        removeClientToken.class = 'custombutton'
-        removeClientToken.innerHTML = 'removeClientToken'
-        removeClientToken.onclick = function(e) {
-            // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
-            e.preventDefault()
-            let parms = {'foo': 'bar'}
-            log('JS -> Native: action: removeClientToken',parms,'logLine_JS')
-            bridge.callHandler('removeClientToken', parms, function(response) {
-                log('JS remove client token response', response, 'js')
-            })
-        }
-
-        var closeElement = document.getElementById('close').appendChild(document.createElement('button'))
-        closeElement.class = 'custombutton'
-        closeElement.innerHTML = 'closePage'
-        closeElement.onclick = function(e) {
-            // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
-            e.preventDefault()
-            let parms = {'foo': 'bar'}
-            log('JS -> Native: action: closePage',parms,'logLine_JS')
-            bridge.callHandler('closePage', parms, function(response) {
-                log('JS remove client token response', response, 'js')
-            })
-        }
-
-    })
+    }
 </script>
 <div class="content">
     <div id='getClientToken'></div>
