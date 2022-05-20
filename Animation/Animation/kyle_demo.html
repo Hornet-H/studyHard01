@@ -3,29 +3,25 @@
 <html><head>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <style >
-        html { font-family:Helvetica; color:#222; }
-
-        h1 { color:#FE8FBD; font-size:24px; margin-top:24px; }
-
-        <!--        button { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }-->
-        custombutton { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }
-        .logLine_Native { border-bottom:1px solid #FFA67C; padding:4px 2px; font-family:courier; font-size:12px; }
-        .logLine_JS { border-bottom:1px solid #D867D8; padding:4px 2px; font-family:courier; font-size:12px; }
-
-        .content {
-            align-self: center;
-            display: flex;
-            flex-direction: row;
-            /*position: relative;*/
-            padding-top:10px;
-            background-color: #ffffff;
-            margin-top: -22px;
-            width: 200px;
-            border-radius: 10px;
-        }
-        .closeWeb {
-
-        }
+       html { font-family:Helvetica; color:#222; }
+h1 { color:#FE8FBD; font-size:24px; margin-top:24px; }
+button { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }
+.logLine_Native { border-bottom:1px solid #FFA67C; padding:4px 2px; font-family:courier; font-size:12px; }
+.logLine_JS { border-bottom:1px solid #D867D8; padding:4px 2px; font-family:courier; font-size:12px; }
+.content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  /*position: relative;*/
+  padding-top:10px;
+  background-color: #ffffff;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: -22px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
     </style>
 </head><body>
 <h1>Demo01</h1>
@@ -80,7 +76,7 @@
                 })
             }
 
-            var closePage = document.getElementById('closePage').appendChild(document.createElement('button'))
+            var closePage = document.getElementById('close').appendChild(document.createElement('button'))
             closePage.innerHTML = 'closePage'
             closePage.onclick = function(e) {
                 // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
@@ -88,19 +84,21 @@
                 let parms = {'foo': 'bar'}
                 log('JS -> Native: action: closePage',parms,'logLine_JS')
                 bridge.callHandler('closePage', parms, function(response) {
-                    log('JS remove client token response', response, 'js')
-                })
+                    log('JS close Page response', response, 'js')
+                }) 
             }
 
         })
 
 
 </script>
-<div class="content">
-    <div id='getMiniProgramToken'></div>
-    <div id='removeMiniProgramToken'></div>
-</div>
-<div class='custombutton' id='closePage'></div>
+ <div class="content">
+      <div id='getMiniProgramToken'></div>
+      <div id='removeMiniProgramToken'></div>
+      <div class='custombutton' id='close'></div>
+    </div>
+
+    <div id='log'></div>
 
 <div id='log'></div>
 </body></html>
