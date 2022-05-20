@@ -1,9 +1,8 @@
-
 <!doctype html>
 <html><head>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <style >
-       html { font-family:Helvetica; color:#222; }
+    <style type='text/css'>
+html { font-family:Helvetica; color:#222; }
 h1 { color:#FE8FBD; font-size:24px; margin-top:24px; }
 button { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }
 .logLine_Native { border-bottom:1px solid #FFA67C; padding:4px 2px; font-family:courier; font-size:12px; }
@@ -24,81 +23,65 @@ button { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }
 }
     </style>
 </head><body>
-<h1>Demo01</h1>
-
-<script>
-   
-
-    function setupWKWebViewJavascriptBridge(callback) {
-        if (window.parent.WKWebViewJavascriptBridge) { return callback(WKWebViewJavascriptBridge); }
-        if (window.parent.WKWVJBCallbacks) { return window.parent.WKWVJBCallbacks.push(callback); }
-        window.parent.WKWVJBCallbacks = [callback];
-        window.parent.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(null)
+    <h1>Demo 12</h1>
+    <script>
+    window.onerror = function(err) {
+        log('window.onerror: ' + err)
     }
 
-      window.onerror = function(err) {
-        log('window.onerror: ' + err)
-      }
-        setupWKWebViewJavascriptBridge(function(bridge) {
-            var uniqueId = 1
-            function log(message, data, type) {
-                var log = document.getElementById('log')
-                var el = document.createElement('div')
-                el.className = type == 'native' ? 'logLine_Native' : 'logLine_JS'
-                el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
-                // if (log.children.length) { log.insertBefore(el, log.children[0]) }
-                if (log.children.length) { log.appendChild(el) }
-                else { log.appendChild(el) }
-            }
+    function setupWKWebViewJavascriptBridge(callback) {
+        if (window.WKWebViewJavascriptBridge) { return callback(WKWebViewJavascriptBridge); }
+        if (window.WKWVJBCallbacks) { return window.WKWVJBCallbacks.push(callback); }
+        window.WKWVJBCallbacks = [callback];
+        window.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(null)
+    }
 
-            document.body.appendChild(document.createElement('br'))
-            var getMiniProgramToken = document.getElementById('getMiniProgramToken').appendChild(document.createElement('button'))
-            getMiniProgramToken.innerHTML = 'getMiniProgramToken'
-            getMiniProgramToken.onclick = function(e) {
-                // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
-                e.preventDefault()
-                let parms = {'foo': 'bar'}
-                log('JS -> Native: action: getMiniProgramToken',parms,'logLine_JS')
-                bridge.callHandler('getMiniProgramToken', parms, function(response) {
-                    log('JS got response', response, 'js')
-                })
-            }
-
-            var removeMiniProgramToken = document.getElementById('removeMiniProgramToken').appendChild(document.createElement('button'))
-            removeMiniProgramToken.innerHTML = 'removeClientToken'
-            removeMiniProgramToken.onclick = function(e) {
-                // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
-                e.preventDefault()
-                let parms = {'foo': 'bar'}
-                log('JS -> Native: action: removeMiniProgramToken',parms,'logLine_JS')
-                bridge.callHandler('removeMiniProgramToken', parms, function(response) {
-                    log('JS remove mini program token response', response, 'js')
-                })
-            }
-
-            var closePage = document.getElementById('close').appendChild(document.createElement('button'))
-            closePage.innerHTML = 'closePage'
-            closePage.onclick = function(e) {
-                // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
-                e.preventDefault()
-                let parms = {'foo': 'bar'}
-                log('JS -> Native: action: closePage',parms,'logLine_JS')
-                bridge.callHandler('closePage', parms, function(response) {
-                    log('JS close Page response', response, 'js')
-                }) 
-            }
-
+    setupWKWebViewJavascriptBridge(function(bridge) {
+        
+      var getMiniProgramToken = document.getElementById('getMiniProgramToken').appendChild(document.createElement('button'))
+      getMiniProgramToken.innerHTML = 'getMiniProgramToken'
+      getMiniProgramToken.onclick = function(e) {
+        // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
+        e.preventDefault()
+        let parms = {'appId': 'b4933e7b0c12f9c16a'}
+        that.printlog('JS -> Native: action: getMiniProgramToken',parms,'logLine_JS')
+        bridge.callHandler('getMiniProgramToken', parms, function(response) {
+          that.printlog('JS got response', response, 'js')
         })
+      }
 
+      var removeClientToken = document.getElementById('removeMiniProgramToken').appendChild(document.createElement('button'))
+      removeClientToken.innerHTML = 'removeMiniProgramToken'
+      removeClientToken.onclick = function(e) {
+        // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
+        e.preventDefault()
+        let parms = {'appId': 'b4933e7b0c12f9c16a'}
+        that.printlog('JS -> Native: action: removeMiniProgramToken',parms,'logLine_JS')
+        bridge.callHandler('removeMiniProgramToken', parms, function(response) {
+          that.printlog('JS remove client token response', response, 'js')
+        })
+      }
 
-</script>
- <div class="content">
+      var closeElement = document.getElementById('close').appendChild(document.createElement('button'))
+      closeElement.class = 'custombutton'
+      closeElement.innerHTML = 'closePage'
+      closeElement.onclick = function(e) {
+        // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
+        e.preventDefault()
+        let parms = {'foo': 'bar'}
+        that.printlog('JS -> Native: action: closePage',parms,'logLine_JS')
+        bridge.callHandler('closePage', parms, function(response) {
+          that.printlog('JS remove client token response', response, 'js')
+        })
+      }
+    })
+    </script>
+    <<h1>DEMO</h1>
+    <div class="content">
       <div id='getMiniProgramToken'></div>
       <div id='removeMiniProgramToken'></div>
       <div class='custombutton' id='close'></div>
     </div>
 
     <div id='log'></div>
-
-<div id='log'></div>
 </body></html>
