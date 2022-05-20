@@ -34,18 +34,29 @@ button { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }
         window.WKWVJBCallbacks = [callback];
         window.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(null)
     }
-
+    var that = this;
     setupWKWebViewJavascriptBridge(function(bridge) {
-        
+         function printlog(message, data, type) {
+        var log = document.getElementById('log')
+        var el = document.createElement('div')
+        el.className = type == 'native' ? 'logLine_Native' : 'logLine_JS'
+          el.innerHTML = this.uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+          // if (log.children.length) { log.insertBefore(el, log.children[0]) }
+          if (log.children.length) { log.appendChild(el) }
+           else { log.appendChild(el) }
+       }
+
+
+
       var getMiniProgramToken = document.getElementById('getMiniProgramToken').appendChild(document.createElement('button'))
       getMiniProgramToken.innerHTML = 'getMiniProgramToken'
       getMiniProgramToken.onclick = function(e) {
         // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
         e.preventDefault()
         let parms = {'appId': 'b4933e7b0c12f9c16a'}
-        that.printlog('JS -> Native: action: getMiniProgramToken',parms,'logLine_JS')
+        printlog('JS -> Native: action: getMiniProgramToken',parms,'logLine_JS')
         bridge.callHandler('getMiniProgramToken', parms, function(response) {
-          that.printlog('JS got response', response, 'js')
+          printlog('JS got response', response, 'js')
         })
       }
 
@@ -55,9 +66,9 @@ button { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }
         // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
         e.preventDefault()
         let parms = {'appId': 'b4933e7b0c12f9c16a'}
-        that.printlog('JS -> Native: action: removeMiniProgramToken',parms,'logLine_JS')
+        printlog('JS -> Native: action: removeMiniProgramToken',parms,'logLine_JS')
         bridge.callHandler('removeMiniProgramToken', parms, function(response) {
-          that.printlog('JS remove client token response', response, 'js')
+          printlog('JS remove client token response', response, 'js')
         })
       }
 
@@ -68,9 +79,9 @@ button { margin:0 3px 10px; font-size:14px; border: 2px solid #000000; }
         // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
         e.preventDefault()
         let parms = {'foo': 'bar'}
-        that.printlog('JS -> Native: action: closePage',parms,'logLine_JS')
+        printlog('JS -> Native: action: closePage',parms,'logLine_JS')
         bridge.callHandler('closePage', parms, function(response) {
-          that.printlog('JS remove client token response', response, 'js')
+          printlog('JS remove client token response', response, 'js')
         })
       }
     })
