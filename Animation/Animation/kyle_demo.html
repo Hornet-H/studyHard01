@@ -58,43 +58,34 @@
                 else { log.appendChild(el) }
             }
 
-            bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
-                log('iOS called testJavascriptHandler with', data, 'native')
-                var responseData = { 'Javascript Says':'Right back atcha!' }
-                log('JS responding with', responseData, 'native')
-                responseCallback(responseData)
-            })
-
             document.body.appendChild(document.createElement('br'))
-            var getClientToken = document.getElementById('getClientToken').appendChild(document.createElement('button'))
-            getClientToken.innerHTML = 'getClientToken'
-            getClientToken.onclick = function(e) {
+            var getMiniProgramToken = document.getElementById('getMiniProgramToken').appendChild(document.createElement('button'))
+            getMiniProgramToken.innerHTML = 'getMiniProgramToken'
+            getMiniProgramToken.onclick = function(e) {
                 // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
                 e.preventDefault()
                 let parms = {'foo': 'bar'}
-                log('JS -> Native: action: getClientToken',parms,'logLine_JS')
-                bridge.callHandler('getClientToken', parms, function(response) {
+                log('JS -> Native: action: getMiniProgramToken',parms,'logLine_JS')
+                bridge.callHandler('getMiniProgramToken', parms, function(response) {
                     log('JS got response', response, 'js')
                 })
             }
 
-            var removeClientToken = document.getElementById('removeClientToken').appendChild(document.createElement('button'))
-            removeClientToken.class = 'custombutton'
-            removeClientToken.innerHTML = 'removeClientToken'
-            removeClientToken.onclick = function(e) {
+            var removeMiniProgramToken = document.getElementById('removeMiniProgramToken').appendChild(document.createElement('button'))
+            removeMiniProgramToken.innerHTML = 'removeClientToken'
+            removeMiniProgramToken.onclick = function(e) {
                 // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
                 e.preventDefault()
                 let parms = {'foo': 'bar'}
-                log('JS -> Native: action: removeClientToken',parms,'logLine_JS')
-                bridge.callHandler('removeClientToken', parms, function(response) {
-                    log('JS remove client token response', response, 'js')
+                log('JS -> Native: action: removeMiniProgramToken',parms,'logLine_JS')
+                bridge.callHandler('removeMiniProgramToken', parms, function(response) {
+                    log('JS remove mini program token response', response, 'js')
                 })
             }
 
-            var closeElement = document.getElementById('close').appendChild(document.createElement('button'))
-            closeElement.class = 'custombutton'
-            closeElement.innerHTML = 'closePage'
-            closeElement.onclick = function(e) {
+            var closePage = document.getElementById('closePage').appendChild(document.createElement('button'))
+            closePage.innerHTML = 'closePage'
+            closePage.onclick = function(e) {
                 // location.href='https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF'
                 e.preventDefault()
                 let parms = {'foo': 'bar'}
@@ -110,8 +101,8 @@
 
 </script>
 <div class="content">
-    <div id='getClientToken'></div>
-    <div id='removeClientToken'></div>
+    <div id='getMiniProgramToken'></div>
+    <div id='removeMiniProgramToken'></div>
 </div>
-<div class='custombutton' id='close'></div>
+<div class='custombutton' id='closePage'></div>
 </body></html>
